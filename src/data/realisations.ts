@@ -1,0 +1,148 @@
+import type { Realisation } from "@/types";
+
+export const realisations: Realisation[] = [
+  {
+    id: "r1",
+    slug: "appartement-haussmannien-paris",
+    title: "Piano Steinway & mobilier précieux — Paris 8e → Paris 16e",
+    category: "local",
+    client: "Famille Durand",
+    origin: "Paris 8e",
+    destination: "Paris 16e",
+    volume: "45 m³",
+    distance: "8 km",
+    duration: "1 jour",
+    team: "4 déménageurs",
+    challenge:
+      "Piano à queue Steinway au 6e étage d'un immeuble haussmannien sans monte-charge, escalier en colimaçon étroit de 90 cm. Mobilier de valeur incluant des meubles estampillés XIXe siècle.",
+    solution:
+      "Montage d'un monte-meuble extérieur sur façade avec autorisation de voirie, technicien piano certifié, protection intégrale des sols et murs avec des couvertures et plaques de protection.",
+    result:
+      "Déménagement réalisé en 9 heures. Piano livré et accordé dans le nouvel appartement le soir même. Aucune égratignure sur les boiseries ou les meubles.",
+    featuredImage: "/images/realisations/appartement-haussmannien.jpg",
+    images: ["/images/realisations/appartement-haussmannien.jpg"],
+    featured: true,
+    date: "2024-11-15",
+    tags: ["piano", "haussmannien", "monte-meuble", "paris", "objets-précieux"],
+  },
+  {
+    id: "r2",
+    slug: "cabinet-architectes-la-defense",
+    title: "45 postes de travail — Cabinet Moreau, Paris 2e → La Défense",
+    category: "entreprise",
+    client: "Cabinet d'Architectes Moreau & Associés",
+    origin: "Paris 2e",
+    destination: "La Défense, 92",
+    volume: "120 m³",
+    distance: "15 km",
+    duration: "3 jours (week-end)",
+    team: "8 déménageurs + 1 chef de projet",
+    challenge:
+      "45 postes informatiques, 3 serveurs actifs, bibliothèque de maquettes d'architecture en matériaux fragiles. Déménagement contraint au week-end pour reprise d'activité le lundi matin à 8h30.",
+    solution:
+      "Coordination avec le responsable IT pour planifier la déconnexion des serveurs, étiquetage individualisé de chaque poste, transport serveurs sur véhicule spécialisé climatisé, maquettes conditionnées en caisses sur mesure.",
+    result:
+      "100% des postes opérationnels le lundi à 8h30. Zéro perte de données. Le directeur a félicité l'équipe pour son efficacité et sa discrétion.",
+    featuredImage: "/images/realisations/cabinet-architectes.jpg",
+    images: ["/images/realisations/cabinet-architectes.jpg"],
+    featured: true,
+    date: "2024-09-21",
+    tags: ["entreprise", "IT", "week-end", "architectes", "la-defense"],
+  },
+  {
+    id: "r3",
+    slug: "expatriation-montreal-canada",
+    title: "Expatriation familiale — Paris 15e → Montréal, Canada",
+    category: "international",
+    client: "Famille Leclerc",
+    origin: "Paris 15e",
+    destination: "Montréal, Canada",
+    volume: "28 m³",
+    distance: "5 530 km",
+    duration: "42 jours (fret maritime)",
+    team: "3 déménageurs + coordinatrice internationale",
+    challenge:
+      "Formalités douanières franco-canadiennes complexes, liste détaillée requise par la CBSA, restrictions sur certains bois exotiques, délai de départ familial contraint à 6 semaines.",
+    solution:
+      "Constitution complète du dossier douanier avec notre juriste spécialisé, traitement des exceptions pour 2 meubles en bois exotique, partenaire local certifié à Montréal pour la livraison finale et le déballage.",
+    result:
+      "Dédouanement en 3 jours ouvrés à Montréal. Livraison à domicile dans les délais prévus. Famille installée sereinement, zéro taxe imprévue.",
+    featuredImage: "/images/realisations/demenagement-canada.jpg",
+    images: ["/images/realisations/demenagement-canada.jpg"],
+    featured: true,
+    date: "2024-08-10",
+    tags: ["international", "canada", "expatriation", "fret-maritime", "montreal"],
+  },
+  {
+    id: "r4",
+    slug: "techflow-startup-meudon",
+    title: "Start-up TechFlow — Paris 9e → Meudon, 92",
+    category: "entreprise",
+    client: "TechFlow SAS",
+    origin: "Paris 9e",
+    destination: "Meudon, 92",
+    volume: "60 m³",
+    distance: "12 km",
+    duration: "2 jours",
+    team: "6 déménageurs + 1 technicien IT",
+    challenge:
+      "Matériel informatique haute valeur (caméras 3D, stations de calcul GPU à 15 000€ pièce), activité de l'entreprise maintenue en parallèle du déménagement partiel.",
+    solution:
+      "Déménagement en deux phases pour maintenir l'activité, emballage anti-statique certifié, transport dédié pour le matériel sensible dans un véhicule climatisé, coordination étroite avec le DSI.",
+    result:
+      "Aucune interruption d'activité. Tout le matériel reconditionné et opérationnel dès la première heure dans les nouveaux locaux de Meudon. TechFlow est désormais client fidèle.",
+    featuredImage: "/images/realisations/techflow-startup.jpg",
+    images: ["/images/realisations/techflow-startup.jpg"],
+    featured: false,
+    date: "2024-10-05",
+    tags: ["startup", "informatique", "matériel-sensible", "meudon"],
+  },
+  {
+    id: "r5",
+    slug: "famille-rousseau-bordeaux",
+    title: "Maison familiale + garde-meuble — Paris 20e → Bordeaux",
+    category: "longue-distance",
+    client: "Famille Rousseau",
+    origin: "Paris 20e",
+    destination: "Bordeaux, 33",
+    volume: "52 m³",
+    distance: "585 km",
+    duration: "2 jours + 3 semaines garde-meuble",
+    team: "4 déménageurs",
+    challenge:
+      "Décalage de 3 semaines entre la vente du logement parisien et la disponibilité du bien bordelais, deux enfants en bas âge, impossibilité de stocker chez la famille.",
+    solution:
+      "Solution garde-meuble de transition dans notre entrepôt de Vitry-sur-Seine, mise à disposition d'un pack 'survie' (linge de maison, vaisselle essentielle, matelas gonflable) pendant la période intermédiaire.",
+    result:
+      "Famille hébergée sereinement chez les grands-parents avec le minimum vital. Livraison à Bordeaux à la date exacte de disponibilité du nouveau logement, 585 km en 6 heures.",
+    featuredImage: "/images/realisations/famille-rousseau.jpg",
+    images: ["/images/realisations/famille-rousseau.jpg"],
+    featured: false,
+    date: "2024-07-20",
+    tags: ["longue-distance", "bordeaux", "garde-meuble", "famille"],
+  },
+  {
+    id: "r6",
+    slug: "collection-art-bernard",
+    title: "Collection d'art contemporain — Paris 7e → Paris 17e",
+    category: "local",
+    client: "M. Bernard (collectionneur)",
+    origin: "Paris 7e",
+    destination: "Paris 17e",
+    volume: "15 m³",
+    distance: "5 km",
+    duration: "1 jour",
+    team: "3 déménageurs spécialisés",
+    challenge:
+      "12 tableaux de grand format dont 2 œuvres majeures d'une valeur assurée de 150 000€ chacune, 3 sculptures en marbre. Conditions d'assurance très strictes requérant un constat d'huissier.",
+    solution:
+      "Caissage bois sur mesure pour chaque tableau, gants de coton obligatoires, protocole photos avant/après avec horodatage, transport en camion padded dédié, huissier de justice présent au départ et à l'arrivée.",
+    result:
+      "Collection intacte, certificat de transport accepté par l'assureur du client sans réserve. M. Bernard nous a confié 4 déménagements depuis. La discrétion et le soin sont unanimement salués.",
+    featuredImage: "/images/realisations/collection-bernard.jpg",
+    images: ["/images/realisations/collection-bernard.jpg"],
+    featured: false,
+    date: "2025-01-08",
+    tags: ["art", "collection", "objets-précieux", "caissage", "paris"],
+  },
+];
