@@ -8,8 +8,8 @@ export const company: CompanyInfo = {
     "Depuis 1999, Transports Boulocher assure le transport routier de fret en Normandie et sur l'axe Le Havre–Paris avec rigueur et ponctualité. Transport interurbain, logistique, affrètement et commissionnement au service des professionnels.",
   founded: 1999,
   siret: "425 083 508",
-  phone: "+33 2 35 25 35 86",
-  email: "contact@transports-boulocher.fr",
+  phone: "+33 6 42 08 70 60",
+  email: "direction@transportsboulocher.fr",
   address: {
     street: "Chaussée de la Moselle",
     postalCode: "76600",
