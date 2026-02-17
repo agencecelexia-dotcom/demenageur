@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contactFormSchema } from "@/lib/validation";
+import { saveSubmission } from "@/lib/storage";
 
 export async function POST(req: NextRequest) {
   try {
@@ -13,9 +14,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Here you would send the email via Resend, SendGrid, etc.
-    // For now we just log and return success
-    console.log("Contact form submission:", result.data);
+    const { firstName, lastName, email, phone, serviceType, moveVolume, projectDescription } =
+      result.data;
+
+    // Persist submission to storage
+    await saveSubmission({ firstName, lastName, email, phone, serviceType, moveVolume, projectDescription });
+
+    // TODO: send email via Resend
+    // await sendEmail({ to: "direction@transportsboulocher.fr", ... })
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch {
