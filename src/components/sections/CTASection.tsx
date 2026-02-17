@@ -7,7 +7,7 @@ export default function CTASection() {
     <section className="relative py-28 overflow-hidden">
       <Image
         src="/images/cta-bg.png"
-        alt="Déménagement professionnel TransLog Pro"
+        alt="Transport routier Transports Boulocher Le Havre"
         fill
         className="object-cover"
         sizes="100vw"
@@ -16,30 +16,30 @@ export default function CTASection() {
       <div className="relative z-10 mx-auto max-w-3xl px-6 lg:px-8 text-center">
         <FadeUp>
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
-            Prêt pour Votre Prochain Déménagement ?
+            Besoin d&apos;un Transporteur de Confiance ?
           </h2>
           <p className="text-lg text-neutral-200 mb-4 max-w-xl mx-auto">
-            Obtenez votre devis personnalisé en moins de 24 heures.
-            Nos chargées de clientèle sont disponibles du lundi au samedi.
+            Obtenez votre devis en moins de 2 heures.
+            Notre équipe est disponible du lundi au vendredi, 9h–18h.
           </p>
           <p className="text-sm text-accent-300 mb-10">
-            Assurance tous risques incluse · Prix ferme sans surprise · Équipes certifiées
+            Flotte Euro 6 · Suivi GPS temps réel · 25 ans d&apos;expérience
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
               className="inline-flex px-8 py-4 rounded-lg bg-accent-500 text-white font-semibold hover:bg-accent-600 transition-colors"
             >
-              Demander un Devis Gratuit
+              Demander un Devis Rapide
             </Link>
             <a
-              href="tel:+33142601122"
+              href="tel:+33235253586"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-lg border border-white/40 text-white font-semibold hover:bg-white/10 transition-colors"
             >
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              01 42 60 11 22
+              02 35 25 35 86
             </a>
           </div>
         </FadeUp>

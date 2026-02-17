@@ -3,24 +3,24 @@ import FadeUp from "@/components/animations/FadeUp";
 
 const reasons = [
   {
-    title: "Assurance tous risques incluse",
-    desc: "Chaque déménagement est couvert par notre RC professionnelle et une garantie tous risques sur vos biens, sans franchise cachée.",
+    title: "Flotte moderne Euro 6 GPS tracée",
+    desc: "Nos camions répondent aux normes Euro 6. Chaque véhicule est équipé d'un GPS temps réel pour un suivi précis de vos expéditions.",
   },
   {
-    title: "Ponctualité garantie",
-    desc: "Nous nous engageons sur des créneaux horaires précis. En retard de plus de 30 minutes, nous offrons 10% sur la prestation.",
+    title: "Ponctualité et fiabilité",
+    desc: "Depuis 25 ans, nous honorons nos engagements de livraison. Notre taux de respect des délais dépasse 97% sur l'ensemble de nos tournées.",
   },
   {
-    title: "Équipes salariées certifiées",
-    desc: "Tous nos déménageurs sont salariés, formés en interne, en uniforme. Aucun sous-traitant inconnu ne touche à vos affaires.",
+    title: "Équipe locale et réactive",
+    desc: "Basés à Le Havre, nos équipes connaissent le tissu industriel normand et les contraintes du port. Un devis en moins de 2 heures sur demande.",
   },
   {
-    title: "Devis transparent, prix ferme",
-    desc: "Notre devis détaillé est un prix ferme et définitif. Aucune mauvaise surprise le jour J. Ce que vous signez, vous payez.",
+    title: "Tarification claire et compétitive",
+    desc: "Nos devis sont détaillés et sans frais cachés. Vous payez exactement ce qui est convenu, quelle que soit la distance ou la complexité.",
   },
   {
-    title: "Démarche éco-responsable",
-    desc: "Camions Euro 6, cartons recyclables récupérés après déménagement, optimisation des trajets — nous réduisons notre empreinte carbone.",
+    title: "Engagement RSE et réduction carbone",
+    desc: "Flotte Euro 6, optimisation des tournées à plein chargement, plans de réduction d'émissions — nous agissons pour un transport plus responsable.",
   },
 ];
 
@@ -46,10 +46,10 @@ export default function WhyChooseUs() {
           <div>
             <FadeUp>
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent-600 mb-4">
-                Pourquoi nous choisir
+                Nos engagements
               </p>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-neutral-900 mb-8">
-                L&apos;Excellence au Service de Votre Déménagement
+                Pourquoi Confier Votre Fret à Boulocher ?
               </h2>
             </FadeUp>
 

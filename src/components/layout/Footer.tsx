@@ -13,9 +13,9 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <Logo light />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-neutral-400">
-              Depuis 2007, TransLog Pro accompagne particuliers et entreprises
-              dans leurs déménagements avec professionnalisme et transparence.
-              Assurance tous risques incluse, devis gratuit sous 24h.
+              Depuis 1999, Transports Boulocher assure le transport routier de fret,
+              la logistique et l&apos;affrètement depuis Le Havre vers toute la France
+              et l&apos;Europe. Devis en 2h, livraison garantie.
             </p>
             <div className="mt-6 flex gap-4">
               {company.socialLinks.instagram && (

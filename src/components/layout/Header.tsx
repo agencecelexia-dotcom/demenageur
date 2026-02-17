@@ -133,7 +133,7 @@ export default function Header() {
               href="/contact"
               className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors"
             >
-              Devis Gratuit
+              Devis Rapide
             </Link>
 
             <button
@@ -197,7 +197,7 @@ export default function Header() {
                   href="/contact"
                   className="block w-full text-center px-4 py-3 rounded-lg text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors"
                 >
-                  Demander un Devis Gratuit
+                  Demander un Devis Rapide
                 </Link>
               </div>
             </div>

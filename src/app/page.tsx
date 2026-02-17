@@ -8,9 +8,9 @@ import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "TransLog Pro | Déménageur Professionnel Paris & International",
+  title: "Transports Boulocher | Transporteur Routier de Fret — Le Havre & Normandie",
   description:
-    "Déménageur professionnel à Paris depuis 2007. Résidentiel, entreprise, international, garde-meuble. Assurance tous risques incluse. Devis gratuit sous 24h.",
+    "Transporteur routier de fret depuis Le Havre depuis 1999. Transport interurbain, logistique, affrètement et transport européen. Devis sous 2h.",
 };
 
 export default function Home() {

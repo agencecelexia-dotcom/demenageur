@@ -3,10 +3,10 @@ import CountUp from "@/components/animations/CountUp";
 import FadeUp from "@/components/animations/FadeUp";
 
 const stats = [
-  { value: 4800, suffix: "+", label: "Déménagements réalisés" },
-  { value: 18, suffix: " ans", label: "D'expérience" },
+  { value: 25, suffix: " ans", label: "D'expérience" },
+  { value: 20, suffix: "+", label: "Chauffeurs & collaborateurs" },
   { value: 98, suffix: "%", label: "Clients satisfaits" },
-  { value: 40, suffix: "+", label: "Pays desservis" },
+  { value: 15, suffix: "+", label: "Pays desservis" },
 ];
 
 export default function StatsSection() {

@@ -3,348 +3,323 @@ import type { BlogPost } from "@/types";
 export const blogPosts: BlogPost[] = [
   {
     id: "b1",
-    slug: "checklist-demenagement-parfait",
-    title: "La checklist complète pour un déménagement parfait",
+    slug: "bien-preparer-envoi-fret",
+    title: "Comment bien préparer votre envoi de fret routier",
     excerpt:
-      "8 semaines avant le jour J jusqu'au soir de l'emménagement : tout ce qu'il faut faire, et dans quel ordre pour ne rien oublier.",
+      "Conditionnement, documents, délais : tout ce que vous devez prévoir en amont pour que votre expédition se déroule sans accroc.",
     category: "Conseils",
-    readTime: "8 min",
-    date: "2025-01-15",
+    readTime: "7 min",
+    date: "2025-01-20",
     featuredImage: "/images/blog/checklist-demenagement.png",
-    author: "Émilie Fontaine",
-    tags: ["checklist", "organisation", "déménagement", "conseils"],
+    author: "Isabelle Renard",
+    tags: ["fret", "expédition", "conditionnement", "conseils", "transport"],
     content: [
       {
         type: "paragraph",
         content:
-          "Un déménagement réussi se prépare bien en avance. La règle d'or : commencez à planifier au moins 8 semaines avant votre date de déménagement. Voici notre checklist professionnelle, testée et affinée sur plus de 4 800 déménagements.",
+          "Un transport routier réussi commence bien avant que le camion arrive à votre porte. La préparation de votre envoi conditionne à la fois la sécurité de vos marchandises et le respect des délais. Voici les étapes incontournables.",
       },
       {
         type: "h2",
-        content: "8 semaines avant : les grandes décisions",
+        content: "1. Conditionner correctement vos marchandises",
       },
       {
         type: "list",
         items: [
-          "Fixez une date de déménagement précise",
-          "Demandez des devis à 3 déménageurs minimum",
-          "Prévenez votre propriétaire ou bailleur",
-          "Vérifiez les conditions de votre contrat de location",
-          "Évaluez le volume de vos affaires (en m³)",
+          "Utilisez des palettes EUR conformes (1,20 m × 0,80 m) en bon état",
+          "Filmez chaque palette avec un film étirable résistant",
+          "Protégez les angles avec des cornières en carton ou plastique",
+          "Ne dépassez pas 1,20 m de hauteur par palette pour la stabilité",
+          "Indiquez le sens de transport (flèches haut/bas) sur chaque colis",
         ],
       },
       {
         type: "h2",
-        content: "4 semaines avant : l'organisation pratique",
+        content: "2. Préparer les documents obligatoires",
       },
       {
         type: "list",
         items: [
-          "Commandez vos cartons et fournitures d'emballage",
-          "Triez et désencombrez (vente, don, recyclage)",
-          "Informez les administrations de votre changement d'adresse",
-          "Transférez vos abonnements (électricité, gaz, internet)",
-          "Réservez un monte-meuble si nécessaire",
-          "Demandez l'arrêté de stationnement pour le camion",
+          "La lettre de voiture (CMR ou LV nationale) correctement remplie",
+          "Le bon de livraison avec quantités et poids exacts",
+          "Les fiches de données de sécurité pour les matières dangereuses (ADR)",
+          "Le bordereau douanier pour les envois hors UE",
+          "Le certificat d'assurance marchandises si nécessaire",
         ],
       },
       {
         type: "h2",
-        content: "La veille du déménagement",
+        content: "3. Communiquer les bonnes informations",
       },
       {
         type: "paragraph",
         content:
-          "La veille est une étape cruciale souvent négligée. Préparez un sac 'survie' avec tout ce dont vous aurez besoin dans les premières 24 heures : médicaments, chargeurs, vêtements de rechange, documents importants, et quelques ustensiles de cuisine.",
+          "Indiquez-nous systématiquement le poids exact (non estimé), les dimensions réelles, la nature des marchandises, et les contraintes de livraison (horaires imposés, quai requis, hayon nécessaire). Ces informations permettent d'affecter le bon véhicule et d'optimiser le planning.",
       },
       {
         type: "quote",
         content:
-          "Un déménagement bien préparé, c'est 80% du stress en moins le jour J.",
-        author: "Laurent Mercier, Directeur de TransLog Pro",
+          "Un colis bien préparé est un colis qui arrive intact. On peut rattraper un retard, on ne répare pas une marchandise abîmée.",
+        author: "Isabelle Renard, Responsable Exploitation",
       },
     ],
   },
   {
     id: "b2",
-    slug: "emballer-objets-fragiles",
-    title: "Comment emballer vos objets fragiles comme un professionnel",
+    slug: "transport-exceptionnel-normandie",
+    title: "Transport exceptionnel : autorisations et réglementation en Normandie",
     excerpt:
-      "Vaisselle, verres, tableaux, électronique : les techniques d'emballage que nous utilisons chez TransLog Pro pour protéger vos biens les plus fragiles.",
-    category: "Guide",
-    readTime: "6 min",
-    date: "2025-01-28",
+      "Convoi exceptionnel, transport hors gabarit : quelles démarches, quels délais et quels itinéraires sont à prévoir pour vos charges lourdes en Seine-Maritime ?",
+    category: "Réglementation",
+    readTime: "8 min",
+    date: "2025-02-03",
     featuredImage: "/images/blog/emballage-fragiles.png",
-    author: "Karim Aït-Ahmed",
-    tags: ["emballage", "fragiles", "vaisselle", "technique", "conseils"],
+    author: "Christophe Lecanu",
+    tags: ["transport-exceptionnel", "convoi", "normandie", "réglementation", "hors-gabarit"],
     content: [
       {
         type: "paragraph",
         content:
-          "L'emballage est l'étape la plus chronophage d'un déménagement, et celle où se jouent la plupart des dommages. Voici les techniques que nos professionnels utilisent au quotidien pour une protection optimale.",
+          "Dès lors qu'un véhicule dépasse les limites légales en poids (44 t avec autorisation), longueur (18,75 m) ou gabarit (2,55 m de large), vous entrez dans le domaine du transport exceptionnel. Une réglementation stricte s'applique, avec des autorisations obligatoires.",
       },
       {
         type: "h2",
-        content: "La vaisselle et les verres",
+        content: "Les seuils qui déclenchent le transport exceptionnel",
       },
       {
         type: "list",
         items: [
-          "Enveloppez chaque pièce individuellement dans du papier bulle ou du papier journal",
-          "Placez les assiettes debout (jamais à plat) dans le carton",
-          "Les verres vont toujours dans des cartons spéciaux avec alvéoles",
-          "Remplissez les espaces vides avec du papier froissé",
-          "Étiquetez les cartons FRAGILE sur 4 faces",
+          "Poids total supérieur à 48 t (catégorie 1) ou 72 t (catégorie 2)",
+          "Largeur supérieure à 3 m",
+          "Hauteur totale supérieure à 4,30 m",
+          "Longueur supérieure à 25 m",
+          "Porte-à-faux avant ou arrière dépassant certains seuils",
         ],
       },
       {
         type: "h2",
-        content: "Les tableaux et miroirs",
+        content: "La procédure d'autorisation",
       },
       {
         type: "paragraph",
         content:
-          "Les tableaux méritent une attention particulière. Utilisez des cornières en carton pour protéger les angles, puis enveloppez dans du papier bulle. Pour les grands formats, nous recommandons le caissage bois sur mesure — ne lésinez pas sur cette protection pour les œuvres de valeur.",
+          "L'autorisation de transport exceptionnel est délivrée par les préfectures de chaque département traversé. Elle doit être demandée au minimum 5 jours ouvrés avant le départ (jusqu'à 30 jours pour les catégories 3 et 4). En Normandie, la DREAL coordonne l'instruction des dossiers pour les itinéraires les plus complexes.",
       },
       {
         type: "h2",
-        content: "L'électroménager et l'électronique",
+        content: "Itinéraires préférentiels en Seine-Maritime",
       },
       {
         type: "list",
         items: [
-          "Conservez les emballages d'origine quand c'est possible",
-          "Débranchez et faites défrosting du réfrigérateur 24h avant",
-          "Protégez les écrans avec du carton et du film à bulles",
-          "Ne posez jamais un écran à plat — toujours debout",
-          "Photographiez les câblages avant déconnexion",
+          "A13 : autorisée pour les catégories 1 et 2, sur autorisation pour les catégories 3+",
+          "A29 (Le Havre ↔ Amiens) : itinéraire fréquemment utilisé, restrictions la nuit",
+          "A150 (Rouen – Le Havre) : passage sous pont limité à 4,30 m à Barentin",
+          "RN27 : alternative recommandée pour les gabarits très larges",
+          "Port du Havre : protocole spécifique, coordonnez-vous avec le terminal",
         ],
       },
     ],
   },
   {
     id: "b3",
-    slug: "demenagement-paris-guide",
-    title: "Déménager à Paris : règles, autorisations et astuces",
+    slug: "axe-a13-transport-normandie-paris",
+    title: "Axe A13 Normandie–Paris : le point de passage incontournable du fret normand",
     excerpt:
-      "Stationnement, monte-meuble, arrêté de voirie, ascenseur — tout ce que vous devez savoir pour un déménagement parisien sans accroc.",
-    category: "Paris",
-    readTime: "7 min",
-    date: "2025-02-10",
+      "Trafic, travaux, restrictions de circulation : tout ce que les chargeurs et transporteurs doivent savoir sur l'A13 pour optimiser leurs flux.",
+    category: "Infrastructure",
+    readTime: "6 min",
+    date: "2025-02-17",
     featuredImage: "/images/blog/demenagement-paris.png",
-    author: "Sophie Blanchard",
-    tags: ["paris", "stationnement", "arrêté", "réglementation", "monte-meuble"],
+    author: "Bertrand Boulocher",
+    tags: ["A13", "normandie", "paris", "transport", "logistique"],
     content: [
       {
         type: "paragraph",
         content:
-          "Déménager à Paris est une discipline à part entière. La densité du bâti, les rues étroites et la réglementation municipale rendent chaque déménagement parisien unique. Voici notre guide complet pour éviter les mauvaises surprises.",
+          "L'autoroute A13 est la colonne vertébrale du transport routier entre la Normandie et l'Île-de-France. Avec plus de 40 000 poids lourds par semaine sur certains tronçons, elle concentre des enjeux considérables pour les transporteurs normands.",
       },
       {
         type: "h2",
-        content: "L'arrêté de stationnement : indispensable",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Pour stationner un camion de déménagement à Paris, vous devez obtenir un arrêté de stationnement auprès de la mairie d'arrondissement. Cette démarche doit être effectuée au moins 5 jours ouvrés avant le déménagement. Le coût est d'environ 20€ par jour et par place. Chez TransLog Pro, nous prenons en charge cette démarche pour vous.",
-      },
-      {
-        type: "h2",
-        content: "Le monte-meuble : quand l'utiliser",
+        content: "Les points de vigilance sur l'A13",
       },
       {
         type: "list",
         items: [
-          "À partir du 3e étage sans ascenseur, le monte-meuble est recommandé",
-          "Indispensable pour les escaliers en colimaçon ou trop étroits",
-          "Obligatoire pour les pianos et meubles volumineux aux étages élevés",
-          "Nécessite une autorisation spécifique de la mairie",
-          "Son utilisation est incluse dans nos devis sur demande",
+          "Tunnel de Saint-Cloud : gabarit limité à 4,30 m, interdiction aux TMD le week-end",
+          "Traversée de Rouen : bouchons récurrents entre 7h-9h et 17h-19h",
+          "Péage de Dozulé : goulot d'étranglement en période estivale",
+          "A13/A14 (Orgeval) : point de divergence critique, prévoir les reports",
+          "Zone de Caen : travaux récurrents sur le périphérique, prévoir des détours",
         ],
       },
       {
         type: "h2",
-        content: "Les règles de l'ascenseur",
+        content: "Nos conseils pour optimiser vos temps de transit",
       },
       {
         type: "paragraph",
         content:
-          "Avant de déménager, renseignez-vous auprès de votre gardien ou syndic sur les règles d'utilisation de l'ascenseur : horaires autorisés, nécessité d'une protection des parois, restrictions de charge. Ces informations évitent des conflits avec le voisinage et des dommages aux parties communes.",
+          "Chez Transports Boulocher, nos chauffeurs connaissent l'A13 comme leur poche après 25 ans de navettes Normandie–Paris. Nous privilégions les départs havrais entre 4h et 6h du matin pour les livraisons matinales à Paris, et entre 10h et 14h pour éviter les pointes de trafic parisien en milieu de journée.",
+      },
+      {
+        type: "quote",
+        content:
+          "Sur l'A13, une heure de marge au départ, c'est souvent deux heures de retard évitées à l'arrivée.",
+        author: "Bertrand Boulocher, Fondateur",
       },
     ],
   },
   {
     id: "b4",
-    slug: "demenagement-international-douane",
-    title: "Douane et déménagement international : évitez les pièges",
+    slug: "affretement-vs-commissionnement",
+    title: "Affrètement ou commissionnement de transport : quelle différence ?",
     excerpt:
-      "Documents requis, marchandises interdites, délais de dédouanement — notre guide complet pour les expatriés qui déménagent à l'international.",
-    category: "International",
-    readTime: "10 min",
-    date: "2025-02-20",
+      "Deux prestations souvent confondues, mais des responsabilités très différentes. Comprendre laquelle vous convient pour mieux choisir votre prestataire.",
+    category: "Guide",
+    readTime: "9 min",
+    date: "2025-01-08",
     featuredImage: "/images/blog/demenagement-international.png",
-    author: "Laurent Mercier",
-    tags: ["international", "douane", "expatriation", "formalités", "visa"],
+    author: "Maxime Duval",
+    tags: ["affrètement", "commissionnement", "transport", "responsabilité", "contrat"],
     content: [
       {
         type: "paragraph",
         content:
-          "Un déménagement international comporte une dimension administrative souvent sous-estimée. Les formalités douanières varient d'un pays à l'autre et peuvent considérablement retarder la livraison de vos biens. Voici ce que vous devez savoir.",
+          "Vous contactez un transporteur pour expédier vos marchandises. Il vous propose un affrètement ou un commissionnement de transport. Ces deux prestations sont encadrées par des régimes juridiques distincts, avec des implications importantes pour la responsabilité en cas de litige.",
       },
       {
         type: "h2",
-        content: "Les documents indispensables",
-      },
-      {
-        type: "list",
-        items: [
-          "Passeport ou carte d'identité en cours de validité",
-          "Visa ou titre de séjour dans le pays de destination",
-          "Inventaire détaillé de tous les biens (en français et en anglais)",
-          "Valeur estimée de chaque objet (pour l'assurance et la douane)",
-          "Preuve de résidence dans le pays de départ et d'arrivée",
-          "Formulaire de franchise douanière (selon les pays)",
-        ],
-      },
-      {
-        type: "h2",
-        content: "Les marchandises soumises à restrictions",
+        content: "L'affrètement : location d'un véhicule",
       },
       {
         type: "paragraph",
         content:
-          "Certains objets sont soumis à des restrictions ou interdictions dans de nombreux pays : produits alimentaires, plantes, médicaments en grandes quantités, armes, objets en bois exotique non certifié ISPM-15. Notre équipe vous conseille pays par pays sur les restrictions spécifiques.",
+          "Dans l'affrètement, le transporteur met un véhicule à disposition du chargeur. C'est le chargeur (ou le fréteur) qui prend en charge l'organisation du transport. La responsabilité du voiturier s'applique pour les avaries ou pertes. Le contrat d'affrètement définit précisément le véhicule, l'itinéraire et les conditions.",
       },
       {
         type: "h2",
-        content: "Les délais à anticiper",
+        content: "Le commissionnement : organisation globale",
       },
       {
         type: "list",
         items: [
-          "Europe : 1 à 2 semaines par camion",
-          "Afrique du Nord : 2 à 3 semaines par mer",
-          "Amérique du Nord : 3 à 6 semaines par conteneur maritime",
-          "Asie/Océanie : 4 à 8 semaines par conteneur maritime",
-          "Aérien : 1 à 2 semaines (coût 3 à 5 fois supérieur)",
+          "Le commissionnaire organise le transport en son nom propre",
+          "Il sélectionne et mandate les transporteurs exécutants",
+          "Il assume une responsabilité de résultat envers le chargeur",
+          "La CMR s'applique pour les transports internationaux",
+          "Il peut combiner plusieurs modes de transport (multimodal)",
+          "Il gère les formalités douanières le cas échéant",
         ],
+      },
+      {
+        type: "h2",
+        content: "Que choisir selon votre situation ?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Pour un transport ponctuel avec un véhicule spécifique : optez pour l'affrètement. Pour une chaîne logistique complexe, multi-étapes ou multi-modes : préférez le commissionnement. Chez Transports Boulocher, nous proposons les deux formules et vous conseillons sur la plus adaptée à votre besoin.",
       },
     ],
   },
   {
     id: "b5",
-    slug: "choisir-garde-meuble",
-    title: "Comment choisir un garde-meuble : 7 critères essentiels",
+    slug: "port-du-havre-hub-logistique",
+    title: "Le port du Havre : premier port de France et hub logistique européen",
     excerpt:
-      "Superficie, sécurité, accessibilité, prix — les questions à poser avant de signer un contrat de garde-meuble pour stocker vos affaires en toute sérénité.",
-    category: "Conseils",
-    readTime: "5 min",
-    date: "2025-03-05",
+      "Container, roll-on roll-off, vrac solide : comprendre les flux du port du Havre pour mieux organiser vos transports pré et post-portuaires.",
+    category: "Logistique",
+    readTime: "7 min",
+    date: "2024-12-10",
     featuredImage: "/images/blog/garde-meuble.png",
-    author: "Émilie Fontaine",
-    tags: ["garde-meuble", "stockage", "conseils", "sécurité", "box"],
+    author: "Christophe Lecanu",
+    tags: ["port-du-havre", "conteneur", "logistique", "import-export", "maritime"],
     content: [
       {
         type: "paragraph",
         content:
-          "Que ce soit pour un entre-deux déménagements ou pour stocker des affaires encombrant votre logement, le choix d'un garde-meuble mérite réflexion. Voici les 7 critères que nos clients négligent souvent.",
+          "Avec plus de 70 millions de tonnes de marchandises traitées chaque année, le port du Havre est le premier port français et le 5e port européen. Pour les transporteurs normands comme Transports Boulocher, il représente une opportunité et un défi logistique quotidien.",
       },
       {
         type: "h2",
-        content: "1. La superficie et le volume réel",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Un box de 5 m² ne signifie pas 5 m³ de stockage ! La hauteur sous plafond (généralement 2,5 m) est cruciale. Calculez votre volume en m³ (surface × hauteur utilisable) avant de choisir votre box.",
-      },
-      {
-        type: "h2",
-        content: "Les 6 autres critères à vérifier",
+        content: "Les principaux terminaux havrais",
       },
       {
         type: "list",
         items: [
-          "Sécurité : vidéosurveillance 24h/24, contrôle d'accès par badge, alarme individuelle par box",
-          "Accessibilité : horaires d'accès (idéal : 7j/7), quai de déchargement couvert",
-          "Conditions climatiques : humidité contrôlée pour protéger les meubles en bois et les livres",
-          "Assurance : vérifiez que votre contrat couvre le stockage ou souscrivez une assurance spécifique",
-          "Engagement : privilégiez les contrats sans engagement minimum ou à la semaine",
-          "Localisation : un box trop loin de chez vous sera sous-utilisé — 30 min maximum",
+          "Terminal de France (TDF) : conteneurs, le plus grand du port",
+          "Grand Terminal de France (GTF) : deuxième terminal conteneurs",
+          "Terminal de Bougainville : roulier (voitures, engins)",
+          "Terminal Multivrac : vrac solide (céréales, ciment, sucre)",
+          "Terminal pétrolier de Gonfreville : hydrocarbures",
         ],
+      },
+      {
+        type: "h2",
+        content: "Organiser vos transports pré et post-portuaires",
+      },
+      {
+        type: "paragraph",
+        content:
+          "La zone portuaire est soumise à des réglementations spécifiques : badges et accréditations pour les chauffeurs, créneaux de livraison imposés par les terminaux, règles de circulation interne. Notre implantation Chaussée de la Moselle, à 2 km du port, nous permet d'intervenir dans les meilleurs délais pour vos enlèvements et livraisons portuaires.",
       },
       {
         type: "quote",
         content:
-          "Nos clients qui optent pour notre garde-meuble pendant un déménagement réduisent leur stress de moitié. Savoir que ses affaires sont en sécurité change tout.",
-        author: "Sophie Blanchard, Responsable Logistique TransLog Pro",
+          "Être au Havre, c'est être au cœur des flux. Notre position géographique est notre premier avantage compétitif.",
+        author: "Christophe Lecanu, Gérant",
       },
     ],
   },
   {
     id: "b6",
-    slug: "demenagement-entreprise-sans-interruption",
-    title: "Déménager votre entreprise sans interrompre l'activité",
+    slug: "choisir-transporteur-routier",
+    title: "Comment choisir un transporteur routier : 8 critères décisifs",
     excerpt:
-      "Notre méthode en 5 phases pour transférer bureaux et entrepôts avec une interruption réduite à zéro — appliquée sur plus de 200 déménagements d'entreprise.",
-    category: "Entreprise",
-    readTime: "9 min",
-    date: "2025-03-18",
+      "Licence, assurance, flotte, réactivité, traçabilité — les questions à poser avant de confier vos marchandises à un transporteur.",
+    category: "Conseils",
+    readTime: "6 min",
+    date: "2024-11-28",
     featuredImage: "/images/blog/demenagement-entreprise.jpeg",
-    author: "Sophie Blanchard",
-    tags: ["entreprise", "bureau", "déménagement", "méthode", "continuité"],
+    author: "Maxime Duval",
+    tags: ["choisir-transporteur", "critères", "assurance", "fiabilité", "conseils"],
     content: [
       {
         type: "paragraph",
         content:
-          "Le déménagement d'entreprise est l'opération la plus redoutée des dirigeants : chaque heure d'interruption coûte de l'argent. Voici la méthode en 5 phases que TransLog Pro a développée pour garantir une continuité d'activité maximale.",
+          "Confier vos marchandises à un transporteur, c'est lui accorder une responsabilité importante. Avant de signer un contrat ou de passer une commande, voici les 8 critères que nous recommandons de vérifier systématiquement.",
       },
       {
         type: "h2",
-        content: "Phase 1 : L'audit pré-déménagement (J-30)",
+        content: "1. La licence de transport et les certifications",
       },
       {
         type: "paragraph",
         content:
-          "Notre chef de projet visite vos locaux actuels et futurs pour établir un plan de déménagement détaillé : inventaire du mobilier, cartographie des postes informatiques, identification des contraintes (horaires, accès, ascenseurs), planning jour par jour.",
+          "Tout transporteur professionnel doit disposer d'une licence de transport intérieur (ou communautaire pour les transports UE). Vérifiez également s'il est certifié OEA (Opérateur Économique Agréé) pour les flux douaniers, et s'il est adhérent à un groupement professionnel reconnu (TLF, FNTR, etc.).",
       },
       {
         type: "h2",
-        content: "Phase 2 : La préparation en parallèle (J-14 à J-7)",
+        content: "Les 7 autres critères à évaluer",
       },
       {
         type: "list",
         items: [
-          "Étiquetage de chaque poste de travail avec son numéro de destination",
-          "Constitution des caisses de mobilier (plantes, archives, objets personnels)",
-          "Coordination avec le prestataire informatique pour la déconnexion",
-          "Réservation des ascenseurs et monte-charges dans les deux bâtiments",
-          "Brief de l'équipe de déménagement sur le plan de charge",
+          "Assurance responsabilité civile et assurance marchandises : montants et exclusions",
+          "État de la flotte : âge des véhicules, normes Euro (6 recommandé), entretien",
+          "Traçabilité : GPS temps réel, accès client aux informations de suivi",
+          "Réactivité : délai de réponse aux demandes de devis et aux urgences",
+          "Références clients : demandez des recommandations dans votre secteur",
+          "Stabilité financière : consultez les bilans déposés sur societe.com ou pappers.fr",
+          "Politique RSE : empreinte carbone, plans de réduction des émissions",
         ],
       },
       {
-        type: "h2",
-        content: "Phase 3 : Le déménagement nocturne ou de week-end",
-      },
-      {
-        type: "paragraph",
+        type: "quote",
         content:
-          "Nous intervenons systématiquement hors heures ouvrées pour minimiser la gêne. Le vendredi soir à 18h, nos équipes prennent le relais. Le lundi matin à 8h, vos collaborateurs retrouvent leur poste de travail opérationnel, parfois sans même réaliser que le déménagement a eu lieu.",
-      },
-      {
-        type: "h2",
-        content: "Phases 4 et 5 : La reconnexion et le bilan",
-      },
-      {
-        type: "list",
-        items: [
-          "Reconnexion informatique par les techniciens IT en parallèle de la manutention",
-          "Vérification de chaque poste avant ouverture de l'entreprise",
-          "Remontage du mobilier et installation selon le plan d'aménagement",
-          "Bilan contradictoire avec le client dans les 48h",
-          "Reprise des cartons et emballages dans les 5 jours",
-        ],
+          "Le prix le moins cher n'est jamais le vrai critère. Ce qui compte, c'est le coût total d'une avarie ou d'un retard.",
+        author: "Maxime Duval, Responsable Commercial",
       },
     ],
   },

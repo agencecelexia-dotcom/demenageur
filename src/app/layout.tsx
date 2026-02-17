@@ -5,26 +5,26 @@ import ScrollProgress from "@/components/ui/ScrollProgress";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://translogpro.fr"),
+  metadataBase: new URL("https://transports-boulocher.fr"),
   title: {
-    default: "TransLog Pro | Déménageur Professionnel Paris & International",
-    template: "%s | TransLog Pro",
+    default: "Transports Boulocher | Transporteur Routier Fret — Le Havre & Normandie",
+    template: "%s | Transports Boulocher",
   },
   description:
-    "TransLog Pro — déménageur professionnel à Paris. Résidentiel, entreprise, international, garde-meuble. Assurance tous risques incluse. Devis gratuit sous 24h.",
+    "Transports Boulocher — transporteur routier de fret depuis Le Havre depuis 1999. Transport interurbain, logistique, affrètement, transport européen. Devis sous 2h.",
   keywords: [
-    "déménageur paris",
-    "déménagement professionnel",
-    "déménagement international",
-    "garde-meuble paris",
-    "déménagement entreprise",
-    "translog pro",
+    "transporteur le havre",
+    "transport routier normandie",
+    "fret seine-maritime",
+    "affrètement normandie",
+    "logistique le havre",
+    "transports boulocher",
   ],
-  authors: [{ name: "TransLog Pro" }],
+  authors: [{ name: "Transports Boulocher" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    siteName: "TransLog Pro",
+    siteName: "Transports Boulocher",
     images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
   },
 };

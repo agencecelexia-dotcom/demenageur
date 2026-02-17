@@ -50,7 +50,7 @@ export default function Logo({ light = false, className }: LogoProps) {
             light ? "text-white" : "text-primary-900"
           )}
         >
-          TransLog
+          Transports
         </span>
         <span
           className={cn(
@@ -58,7 +58,7 @@ export default function Logo({ light = false, className }: LogoProps) {
             light ? "text-accent-300" : "text-accent-600"
           )}
         >
-          Pro
+          Boulocher
         </span>
       </div>
     </Link>

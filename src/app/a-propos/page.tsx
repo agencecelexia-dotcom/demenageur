@@ -6,9 +6,9 @@ import { team } from "@/data/team";
 import { company } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "À Propos — TransLog Pro",
+  title: "À Propos — Transports Boulocher",
   description:
-    "Découvrez l'histoire de TransLog Pro, déménageur professionnel à Paris depuis 2007. Rencontrez notre équipe passionnée et découvrez nos valeurs.",
+    "Découvrez l'histoire de Transports Boulocher, transporteur routier de fret basé au Havre depuis 1999. Rencontrez notre équipe et découvrez nos valeurs.",
 };
 
 export default function AProposPage() {
@@ -21,7 +21,7 @@ export default function AProposPage() {
             <FadeUp>
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent-400 mb-4">Notre histoire</p>
               <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
-                18 ans d&apos;expertise au service de vos déménagements
+                25 ans au service du transport routier normand
               </h1>
               <p className="text-neutral-300 leading-relaxed mb-8">
                 {company.description}
@@ -53,9 +53,9 @@ export default function AProposPage() {
           </FadeUp>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
-              { title: "Professionnalisme", desc: "Chaque déménagement est une mission. Nous préparons, planifions et exécutons avec la même rigueur que pour un client VIP.", icon: "🏆" },
-              { title: "Transparence", desc: "Un devis c'est un engagement. Nous n'ajoutons jamais de frais cachés et communiquons proactivement sur chaque étape.", icon: "🤝" },
-              { title: "Bienveillance", desc: "Déménager est stressant. Nos équipes sont formées à l'empathie et traitent vos affaires comme si c'étaient les leurs.", icon: "💙" },
+              { title: "Fiabilité", desc: "Chaque livraison est un engagement. Nous planifions, coordonnons et exécutons avec la même rigueur que pour notre premier client.", icon: "🏆" },
+              { title: "Transparence", desc: "Un devis est un contrat. Nous ne pratiquons aucuns frais cachés et informons proactivement sur chaque étape de l'acheminement.", icon: "🤝" },
+              { title: "Proximité", desc: "Ancrés en Normandie depuis 1999, nous connaissons le tissu économique local et cultivons des relations durables avec nos clients.", icon: "🚛" },
             ].map((v, i) => (
               <FadeUp key={v.title} delay={i * 0.1}>
                 <div className="text-center p-8 rounded-2xl bg-primary-50 border border-primary-100">
@@ -110,9 +110,9 @@ export default function AProposPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "2007", label: "Année de fondation" },
-              { value: "4 800+", label: "Déménagements réalisés" },
-              { value: "40+", label: "Pays desservis" },
+              { value: "1999", label: "Année de fondation" },
+              { value: "20+", label: "Collaborateurs" },
+              { value: "15+", label: "Pays desservis" },
               { value: "98%", label: "Clients satisfaits" },
             ].map((stat, i) => (
               <FadeUp key={stat.label} delay={i * 0.1}>
