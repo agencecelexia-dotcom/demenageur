@@ -4,61 +4,47 @@ import FadeUp from "@/components/animations/FadeUp";
 
 export default function CTASection() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="flex flex-col lg:flex-row min-h-[500px]">
+    <section className="relative py-32 overflow-hidden">
+      <Image
+        src="/images/cta-bg.png"
+        alt="Transport routier Transports Boulocher Le Havre"
+        fill
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-primary-950/82" />
 
-        {/* Gauche — texte sur fond sombre */}
-        <div className="relative z-10 bg-primary-950 flex flex-col justify-center px-8 md:px-16 py-20 lg:py-28 lg:w-1/2 xl:w-[55%]">
-          <FadeUp>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="h-[2px] w-10 bg-accent-400 shrink-0" />
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent-400">
-                Besoin d&apos;un devis ?
-              </p>
-            </div>
+      <div className="relative z-10 mx-auto max-w-3xl px-6 lg:px-8 text-center">
+        <FadeUp>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-white tracking-tight mb-6">
+            Besoin d&apos;un Transporteur de Confiance ?
+          </h2>
+          <p className="text-base text-neutral-300 mb-3 max-w-lg mx-auto leading-relaxed">
+            Obtenez votre devis en moins de 2 heures.
+            Notre équipe est disponible du lundi au vendredi, 9h–18h.
+          </p>
+          <p className="text-sm text-accent-400 mb-12 tracking-wide">
+            Flotte Euro 6 · Suivi GPS temps réel · 25 ans d&apos;expérience
+          </p>
 
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Transporteur de Confiance
-              <br />
-              depuis Le Havre
-            </h2>
-
-            <p className="text-neutral-400 text-base leading-relaxed mb-8 max-w-sm">
-              Notre équipe répond sous 2h, du lundi au vendredi de 9h à 18h.
-              Flotte Euro 6 · Suivi GPS temps réel · 25 ans d&apos;expérience.
-            </p>
-
-            {/* Téléphone en grand */}
-            <a
-              href="tel:+33642087060"
-              className="font-heading font-bold text-accent-400 hover:text-accent-300 transition-colors mb-8 block"
-              style={{ fontSize: "clamp(1.5rem, 3vw, 2.25rem)" }}
-            >
-              06 42 08 70 60
-            </a>
-
-            {/* CTA bouton */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-4 bg-accent-500 text-white font-semibold text-sm hover:bg-accent-600 transition-colors rounded-none border-l-[3px] border-accent-300"
+              className="px-8 py-4 bg-accent-500 text-white font-semibold text-sm hover:bg-accent-600 transition-colors"
             >
               Demander un Devis Rapide
             </Link>
-          </FadeUp>
-        </div>
-
-        {/* Droite — image avec bord diagonal */}
-        <div className="relative lg:w-1/2 xl:w-[45%] min-h-[300px] lg:min-h-0 clip-diagonal">
-          <Image
-            src="/images/cta-bg.png"
-            alt="Camion Transports Boulocher"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 45vw"
-          />
-          {/* Overlay très léger pour lisibilité */}
-          <div className="absolute inset-0 bg-primary-950/10" />
-        </div>
+            <a
+              href="tel:+33642087060"
+              className="flex items-center gap-2.5 px-8 py-4 border border-white/30 text-white font-semibold text-sm hover:bg-white/8 hover:border-white/50 transition-colors"
+            >
+              <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              06 42 08 70 60
+            </a>
+          </div>
+        </FadeUp>
       </div>
     </section>
   );

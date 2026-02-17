@@ -1,75 +1,72 @@
 import Image from "next/image";
 import FadeUp from "@/components/animations/FadeUp";
 
-const engagements = [
+const reasons = [
   {
-    value: "25",
-    unit: "ans",
-    label: "d'expérience en transport routier de fret depuis Le Havre",
+    title: "Flotte moderne Euro 6 GPS tracée",
+    desc: "Nos camions répondent aux normes Euro 6. Chaque véhicule est équipé d'un GPS temps réel pour un suivi précis de vos expéditions.",
   },
   {
-    value: "98%",
-    unit: "",
-    label: "de clients satisfaits selon nos enquêtes annuelles de qualité",
+    title: "Ponctualité et fiabilité",
+    desc: "Depuis 25 ans, nous honorons nos engagements de livraison. Notre taux de respect des délais dépasse 97% sur l'ensemble de nos tournées.",
   },
   {
-    value: "2h",
-    unit: "",
-    label: "délai maximum pour vous répondre avec un devis personnalisé",
+    title: "Équipe locale et réactive",
+    desc: "Basés à Le Havre, nos équipes connaissent le tissu industriel normand et les contraintes du port. Un devis en moins de 2 heures sur demande.",
+  },
+  {
+    title: "Tarification claire et compétitive",
+    desc: "Nos devis sont détaillés et sans frais cachés. Vous payez exactement ce qui est convenu, quelle que soit la distance ou la complexité.",
+  },
+  {
+    title: "Engagement RSE et réduction carbone",
+    desc: "Flotte Euro 6, optimisation des tournées à plein chargement, plans de réduction d'émissions — nous agissons pour un transport plus responsable.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Image pleine largeur */}
-      <div className="relative h-[480px] md:h-[560px] w-full">
-        <Image
-          src="/images/about-team.png"
-          alt="L'équipe Transports Boulocher"
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-        />
-        {/* Overlay sombre progressif */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/80 via-primary-950/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary-950/60 to-transparent" />
+    <section className="py-28 bg-white">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        {/* Texte flottant sur l'image */}
-        <div className="absolute inset-0 flex flex-col justify-end px-8 md:px-16 pb-12 max-w-7xl mx-auto w-full">
+          {/* Image */}
           <FadeUp>
-            <div className="flex items-center gap-4 mb-6">
-              <div className="h-[2px] w-10 bg-accent-400 shrink-0" />
-              <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent-400">
-                Notre Engagement
-              </p>
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="/images/about-team.png"
+                alt="Équipe Transports Boulocher au travail"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-2xl">
-              La rigueur normande au service de votre fret
-            </h2>
           </FadeUp>
-        </div>
-      </div>
 
-      {/* Barre de stats flottante */}
-      <div className="bg-white border-b border-neutral-200">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-neutral-200">
-            {engagements.map((e) => (
-              <FadeUp key={e.value} className="py-10 px-6 md:px-10 first:pl-0 last:pr-0">
-                <div className="flex items-baseline gap-1 mb-3">
-                  <span className="font-heading font-black text-5xl text-primary-900 leading-none">
-                    {e.value}
-                  </span>
-                  {e.unit && (
-                    <span className="font-heading font-bold text-2xl text-accent-500">
-                      {e.unit}
-                    </span>
-                  )}
-                </div>
-                <p className="text-sm text-neutral-600 leading-relaxed">{e.label}</p>
-              </FadeUp>
-            ))}
+          {/* Content */}
+          <div>
+            <FadeUp>
+              <p className="text-xs font-semibold tracking-[0.22em] uppercase text-accent-600 mb-4">
+                Nos engagements
+              </p>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-neutral-900 tracking-tight mb-12">
+                Pourquoi Confier Votre Fret à Boulocher ?
+              </h2>
+            </FadeUp>
+
+            <div className="space-y-8">
+              {reasons.map((r, i) => (
+                <FadeUp key={r.title} delay={i * 0.07}>
+                  <div className="flex items-start gap-5">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500" />
+                    <div>
+                      <p className="font-semibold text-neutral-900 mb-1">{r.title}</p>
+                      <p className="text-sm text-neutral-500 leading-relaxed">{r.desc}</p>
+                    </div>
+                  </div>
+                </FadeUp>
+              ))}
+            </div>
           </div>
         </div>
       </div>
