@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     siteName: "TransLog Pro",
-    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
   },
 };
 

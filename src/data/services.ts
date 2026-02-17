@@ -10,7 +10,7 @@ export const services: Service[] = [
     fullDescription:
       "Que vous déménagiez d'un studio parisien ou d'une grande maison en banlieue, notre équipe s'adapte à chaque configuration. Nous gérons l'intégralité de votre déménagement : du premier carton emballé jusqu'au dernier meuble installé dans votre nouveau logement. Un interlocuteur dédié vous accompagne du devis jusqu'au jour J.",
     icon: "Home",
-    image: "/images/services/demenagement-residentiel.jpg",
+    image: "/images/services/demenagement-residentiel.png",
     features: [
       "Emballage professionnel de tous vos effets",
       "Démontage et remontage des meubles",
@@ -33,7 +33,7 @@ export const services: Service[] = [
     fullDescription:
       "Le déménagement d'entreprise exige une coordination millimétrée. Nous intervenons le plus souvent en dehors des heures de bureau pour garantir la continuité de votre activité. Un chef de projet dédié pilote l'opération de A à Z, depuis le plan de déménagement jusqu'à la reconnexion informatique dans vos nouveaux locaux.",
     icon: "Building2",
-    image: "/images/services/demenagement-entreprise.jpg",
+    image: "/images/services/demenagement-entreprise.png",
     features: [
       "Planning coordonné hors heures ouvrées",
       "Déconnexion et reconnexion informatique",
@@ -56,7 +56,7 @@ export const services: Service[] = [
     fullDescription:
       "La distance ne doit pas être synonyme de stress. Nos camions GPS tracés assurent une livraison à date et heure garanties, avec un suivi en temps réel transmis à votre chargée de clientèle. Nous couvrons toute la France métropolitaine et les DOM-TOM, avec un réseau de partenaires certifiés en région.",
     icon: "Route",
-    image: "/images/services/demenagement-longue-distance.jpg",
+    image: "/images/services/demenagement-longue-distance.jpeg",
     features: [
       "Camions GPS tracés en temps réel",
       "Livraison à date et heure garanties",
@@ -79,7 +79,7 @@ export const services: Service[] = [
     fullDescription:
       "Expatriation professionnelle ou projet de vie à l'étranger : nous prenons en charge l'intégralité du processus douanier, logistique et assurantiel pour que vos affaires arrivent à bon port, où que ce soit dans le monde. Nos correspondants locaux dans 40+ pays garantissent une livraison porte-à-porte sans mauvaise surprise.",
     icon: "Globe",
-    image: "/images/services/demenagement-international.jpg",
+    image: "/images/services/demenagement-international.jpeg",
     features: [
       "Formalités douanières prises en charge",
       "Conteneurs maritimes ou fret aérien",
@@ -102,7 +102,7 @@ export const services: Service[] = [
     fullDescription:
       "Entre deux déménagements, en attente de signature, ou simplement pour désencombrer votre espace de vie : nos box de stockage individuels sont disponibles à la semaine ou au mois, sans engagement minimum de durée. Chaque bien est inventorié photographiquement à l'entrée pour votre tranquillité.",
     icon: "Warehouse",
-    image: "/images/services/garde-meuble-stockage.jpg",
+    image: "/images/services/garde-meuble-stockage.png",
     features: [
       "Box individuels de 1 à 50 m²",
       "Vidéosurveillance 24h/24",
@@ -125,7 +125,7 @@ export const services: Service[] = [
     fullDescription:
       "Nos spécialistes de l'emballage protègent vos biens les plus précieux : œuvres d'art, instruments de musique, collection de vinyles, mobilier de luxe. Chaque objet est traité avec le protocole adapté à sa fragilité et sa valeur. Nous prenons également en charge le déballage et l'installation dans votre nouveau domicile.",
     icon: "PackageCheck",
-    image: "/images/services/emballage-manutention.jpg",
+    image: "/images/services/emballage-manutention.png",
     features: [
       "Matériaux d'emballage professionnels fournis",
       "Spécialistes objets d'art et antiquités",

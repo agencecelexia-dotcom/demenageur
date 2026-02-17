@@ -34,7 +34,7 @@ export default function AProposPage() {
             <FadeUp delay={0.15}>
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop&q=80"
+                  src="/images/hero-about.png"
                   alt="Équipe TransLog Pro"
                   fill className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

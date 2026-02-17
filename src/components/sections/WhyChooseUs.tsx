@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
           <FadeUp>
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop&q=80"
+                src="/images/about-team.png"
                 alt="Équipe TransLog Pro au travail"
                 fill
                 className="object-cover"

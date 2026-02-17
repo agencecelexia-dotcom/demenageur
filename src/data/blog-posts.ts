@@ -10,7 +10,7 @@ export const blogPosts: BlogPost[] = [
     category: "Conseils",
     readTime: "8 min",
     date: "2025-01-15",
-    featuredImage: "/images/blog/checklist-demenagement.jpg",
+    featuredImage: "/images/blog/checklist-demenagement.png",
     author: "Émilie Fontaine",
     tags: ["checklist", "organisation", "déménagement", "conseils"],
     content: [
@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guide",
     readTime: "6 min",
     date: "2025-01-28",
-    featuredImage: "/images/blog/emballage-fragiles.jpg",
+    featuredImage: "/images/blog/emballage-fragiles.png",
     author: "Karim Aït-Ahmed",
     tags: ["emballage", "fragiles", "vaisselle", "technique", "conseils"],
     content: [
@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
     category: "Paris",
     readTime: "7 min",
     date: "2025-02-10",
-    featuredImage: "/images/blog/demenagement-paris.jpg",
+    featuredImage: "/images/blog/demenagement-paris.png",
     author: "Sophie Blanchard",
     tags: ["paris", "stationnement", "arrêté", "réglementation", "monte-meuble"],
     content: [
@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
     category: "International",
     readTime: "10 min",
     date: "2025-02-20",
-    featuredImage: "/images/blog/demenagement-international.jpg",
+    featuredImage: "/images/blog/demenagement-international.png",
     author: "Laurent Mercier",
     tags: ["international", "douane", "expatriation", "formalités", "visa"],
     content: [
@@ -241,7 +241,7 @@ export const blogPosts: BlogPost[] = [
     category: "Conseils",
     readTime: "5 min",
     date: "2025-03-05",
-    featuredImage: "/images/blog/garde-meuble.jpg",
+    featuredImage: "/images/blog/garde-meuble.png",
     author: "Émilie Fontaine",
     tags: ["garde-meuble", "stockage", "conseils", "sécurité", "box"],
     content: [
@@ -291,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     category: "Entreprise",
     readTime: "9 min",
     date: "2025-03-18",
-    featuredImage: "/images/blog/demenagement-entreprise.jpg",
+    featuredImage: "/images/blog/demenagement-entreprise.jpeg",
     author: "Sophie Blanchard",
     tags: ["entreprise", "bureau", "déménagement", "méthode", "continuité"],
     content: [

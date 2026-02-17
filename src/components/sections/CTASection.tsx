@@ -6,7 +6,7 @@ export default function CTASection() {
   return (
     <section className="relative py-28 overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=600&fit=crop&q=80"
+        src="/images/cta-bg.png"
         alt="Déménagement professionnel TransLog Pro"
         fill
         className="object-cover"

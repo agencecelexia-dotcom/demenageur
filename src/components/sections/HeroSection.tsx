@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop&q=80"
+        src="/images/hero-main.jpeg"
         alt="Déménageurs professionnels TransLog Pro"
         fill
         priority
