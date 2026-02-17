@@ -399,7 +399,7 @@ export default function AdminDashboardClient({ submissions, recentEvents, stats,
           </div>
         </header>
 
-        <div className="p-4 sm:p-6 lg:p-8 max-w-[1320px]">
+        <div className="p-4 sm:p-6 lg:p-8">
 
           {/* ═══ OVERVIEW ═════════════════════════════════════════════════ */}
           {active === "overview" && (
