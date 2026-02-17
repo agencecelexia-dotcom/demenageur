@@ -1,29 +1,33 @@
-"use client";
-import CountUp from "@/components/animations/CountUp";
-import FadeUp from "@/components/animations/FadeUp";
-
-const stats = [
-  { value: 25, suffix: " ans", label: "D'expérience" },
-  { value: 20, suffix: "+", label: "Chauffeurs & collaborateurs" },
-  { value: 98, suffix: "%", label: "Clients satisfaits" },
-  { value: 15, suffix: "+", label: "Pays desservis" },
+const items = [
+  { value: "25 ans", label: "d'expérience" },
+  { value: "20+", label: "chauffeurs & collaborateurs" },
+  { value: "98%", label: "clients satisfaits" },
+  { value: "15+", label: "pays desservis" },
+  { value: "Euro 6", label: "flotte certifiée" },
+  { value: "2h", label: "délai de réponse devis" },
 ];
+
+// Duplicate for seamless loop
+const ticker = [...items, ...items];
 
 export default function StatsSection() {
   return (
-    <section className="py-20 bg-primary-900">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          {stats.map((stat, i) => (
-            <FadeUp key={stat.label} delay={i * 0.1} className="text-center">
-              <div className="font-heading text-5xl md:text-6xl font-bold text-white">
-                <CountUp end={stat.value} suffix={stat.suffix} />
-              </div>
-              <p className="mt-2 text-sm font-medium text-neutral-300">{stat.label}</p>
-            </FadeUp>
-          ))}
-        </div>
+    <div className="h-16 bg-accent-500 overflow-hidden flex items-center" aria-hidden>
+      <div className="animate-marquee flex items-center gap-0">
+        {ticker.map((item, i) => (
+          <div key={i} className="flex items-center gap-0 shrink-0">
+            <div className="flex items-center gap-2 px-8">
+              <span className="font-heading font-bold text-white text-sm">
+                {item.value}
+              </span>
+              <span className="text-white/70 text-xs uppercase tracking-widest">
+                {item.label}
+              </span>
+            </div>
+            <span className="text-white/40 text-lg font-thin select-none">·</span>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
