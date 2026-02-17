@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
 
           {/* Image */}
           <FadeUp>
-            <div className="relative aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
                 src="/images/about-team.png"
                 alt="Équipe Transports Boulocher au travail"
@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               {reasons.map((r, i) => (
                 <FadeUp key={r.title} delay={i * 0.07}>
                   <div className="flex items-start gap-5">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-500" />
+                    <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent-500 ring-4 ring-accent-100" />
                     <div>
                       <p className="font-semibold text-neutral-900 mb-1">{r.title}</p>
                       <p className="text-sm text-neutral-500 leading-relaxed">{r.desc}</p>

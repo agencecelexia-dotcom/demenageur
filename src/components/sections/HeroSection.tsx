@@ -58,13 +58,13 @@ export default function HeroSection() {
         >
           <Link
             href="/contact"
-            className="px-8 py-4 bg-accent-500 text-white font-semibold text-sm hover:bg-accent-600 transition-colors"
+            className="px-8 py-4 bg-accent-500 text-white font-semibold text-sm rounded-2xl hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/25 hover:-translate-y-0.5 transition-all duration-300"
           >
             Demander un Devis Rapide
           </Link>
           <Link
             href="/realisations"
-            className="px-8 py-4 border border-white/35 text-white font-semibold text-sm hover:bg-white/10 hover:border-white/55 transition-colors"
+            className="px-8 py-4 border border-white/35 text-white font-semibold text-sm rounded-2xl hover:bg-white/10 hover:border-white/55 hover:-translate-y-0.5 transition-all duration-300"
           >
             Voir nos Références
           </Link>
@@ -76,7 +76,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.1, duration: 0.5 }}
-        className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-primary-950/50 backdrop-blur-sm"
+        className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-primary-950/50 backdrop-blur-sm rounded-t-3xl"
       >
         <div className="mx-auto max-w-5xl px-6 py-4 flex flex-wrap justify-center items-center gap-x-10 gap-y-2">
           {[

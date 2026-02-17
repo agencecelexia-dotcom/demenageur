@@ -18,7 +18,7 @@ export default function TestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {displayed.map((t, i) => (
             <FadeUp key={t.id} delay={i * 0.1}>
-              <div className="h-full flex flex-col bg-white border border-neutral-200 p-8">
+              <div className="h-full flex flex-col bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                 {/* Stars */}
                 <div className="flex gap-1 mb-6">
                   {Array.from({ length: 5 }).map((_, j) => (

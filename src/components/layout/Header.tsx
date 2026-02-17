@@ -131,7 +131,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <Link
               href="/contact"
-              className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors"
+              className="hidden md:inline-flex items-center px-5 py-2.5 rounded-xl text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/20 hover:-translate-y-0.5 transition-all duration-300"
             >
               Devis Rapide
             </Link>
@@ -195,7 +195,7 @@ export default function Header() {
               <div className="pt-3 border-t border-neutral-100">
                 <Link
                   href="/contact"
-                  className="block w-full text-center px-4 py-3 rounded-lg text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors"
+                  className="block w-full text-center px-4 py-3 rounded-xl text-sm font-semibold bg-accent-500 text-white hover:bg-accent-600 transition-colors"
                 >
                   Demander un Devis Rapide
                 </Link>

@@ -132,7 +132,7 @@ export default function ContactForm() {
             autoComplete="given-name"
             value={form.firstName}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+            className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
             placeholder="Jean"
           />
           {errors.firstName && <p className="mt-1 text-xs text-red-600">{errors.firstName}</p>}
@@ -148,7 +148,7 @@ export default function ContactForm() {
             autoComplete="family-name"
             value={form.lastName}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+            className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
             placeholder="Dupont"
           />
           {errors.lastName && <p className="mt-1 text-xs text-red-600">{errors.lastName}</p>}
@@ -168,7 +168,7 @@ export default function ContactForm() {
             autoComplete="email"
             value={form.email}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+            className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
             placeholder="jean@exemple.fr"
           />
           {errors.email && <p className="mt-1 text-xs text-red-600">{errors.email}</p>}
@@ -184,7 +184,7 @@ export default function ContactForm() {
             autoComplete="tel"
             value={form.phone}
             onChange={handleChange}
-            className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
+            className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition"
             placeholder="06 12 34 56 78"
           />
           {errors.phone && <p className="mt-1 text-xs text-red-600">{errors.phone}</p>}
@@ -201,7 +201,7 @@ export default function ContactForm() {
           name="serviceType"
           value={form.serviceType}
           onChange={handleChange}
-          className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition bg-white"
+          className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition bg-white"
         >
           <option value="">Sélectionnez un service</option>
           {serviceOptions.map((opt) => (
@@ -221,7 +221,7 @@ export default function ContactForm() {
           name="moveVolume"
           value={form.moveVolume}
           onChange={handleChange}
-          className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition bg-white"
+          className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition bg-white"
         >
           <option value="">Sélectionnez un volume</option>
           {volumeOptions.map((opt) => (
@@ -242,7 +242,7 @@ export default function ContactForm() {
           rows={4}
           value={form.projectDescription}
           onChange={handleChange}
-          className="w-full px-4 py-2.5 rounded-lg border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition resize-none"
+          className="w-full px-4 py-2.5 rounded-xl border border-neutral-300 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition resize-none"
           placeholder="Adresse de départ, adresse d'arrivée, date souhaitée, particularités (piano, objets fragiles, étage sans ascenseur...)..."
         />
         {errors.projectDescription && <p className="mt-1 text-xs text-red-600">{errors.projectDescription}</p>}
@@ -274,7 +274,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full py-3.5 rounded-lg bg-accent-500 text-white font-semibold hover:bg-accent-600 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full py-3.5 rounded-xl bg-accent-500 text-white font-semibold hover:bg-accent-600 hover:shadow-lg hover:shadow-accent-500/20 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === "loading" ? "Envoi en cours..." : "Envoyer ma demande de devis"}
       </button>

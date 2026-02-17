@@ -33,9 +33,9 @@ export default function ServicesOverview() {
             <FadeUp key={svc.id} delay={idx * 0.07}>
               <Link
                 href={`/services/${svc.slug}`}
-                className="group flex flex-col p-8 border border-neutral-150 bg-neutral-50 hover:bg-white hover:border-primary-200 hover:shadow-[0_4px_24px_0_oklch(0%_0_0/0.06)] transition-all duration-300"
+                className="group flex flex-col p-8 border border-neutral-150 bg-neutral-50 rounded-2xl hover:bg-white hover:border-primary-200 hover:shadow-[0_8px_32px_0_oklch(0%_0_0/0.08)] hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="mb-6 inline-flex h-11 w-11 items-center justify-center bg-white border border-neutral-200 text-primary-700 group-hover:border-primary-300 group-hover:text-primary-800 transition-colors">
+                <div className="mb-6 inline-flex h-11 w-11 items-center justify-center bg-white border border-neutral-200 rounded-xl text-primary-700 group-hover:border-primary-300 group-hover:text-primary-800 group-hover:bg-primary-50 transition-all duration-300">
                   <svg
                     className="h-5 w-5"
                     fill="none"
@@ -51,9 +51,9 @@ export default function ServicesOverview() {
                 <p className="text-sm text-neutral-500 leading-relaxed flex-1">
                   {svc.shortDescription}
                 </p>
-                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold text-accent-600 group-hover:text-accent-700 transition-colors">
+                <div className="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-accent-600 bg-accent-50 px-3 py-1.5 rounded-full group-hover:bg-accent-100 group-hover:text-accent-700 transition-all duration-300">
                   <span>En savoir plus</span>
-                  <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </Link>
             </FadeUp>
