@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
-  title: "Admin — Transports Boulocher",
+  title: `Admin — ${clientConfig.NOM_ENTREPRISE}`,
   robots: { index: false, follow: false },
 };
 

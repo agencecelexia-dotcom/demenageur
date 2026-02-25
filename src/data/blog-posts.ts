@@ -66,16 +66,16 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "b2",
-    slug: "transport-exceptionnel-normandie",
-    title: "Transport exceptionnel : autorisations et réglementation en Normandie",
+    slug: "transport-exceptionnel-reglementation",
+    title: "Transport exceptionnel : autorisations et réglementation en {REGION}",
     excerpt:
-      "Convoi exceptionnel, transport hors gabarit : quelles démarches, quels délais et quels itinéraires sont à prévoir pour vos charges lourdes en Seine-Maritime ?",
+      "Convoi exceptionnel, transport hors gabarit : quelles démarches, quels délais et quels itinéraires sont à prévoir pour vos charges lourdes en {DEPARTEMENT} ?",
     category: "Réglementation",
     readTime: "8 min",
     date: "2025-02-03",
     featuredImage: "/images/blog/emballage-fragiles.png",
-    author: "Christophe Lecanu",
-    tags: ["transport-exceptionnel", "convoi", "normandie", "réglementation", "hors-gabarit"],
+    author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}",
+    tags: ["transport-exceptionnel", "convoi", "réglementation", "hors-gabarit"],
     content: [
       {
         type: "paragraph",
@@ -103,54 +103,54 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "L'autorisation de transport exceptionnel est délivrée par les préfectures de chaque département traversé. Elle doit être demandée au minimum 5 jours ouvrés avant le départ (jusqu'à 30 jours pour les catégories 3 et 4). En Normandie, la DREAL coordonne l'instruction des dossiers pour les itinéraires les plus complexes.",
+          "L'autorisation de transport exceptionnel est délivrée par les préfectures de chaque département traversé. Elle doit être demandée au minimum 5 jours ouvrés avant le départ (jusqu'à 30 jours pour les catégories 3 et 4). En {REGION}, la DREAL coordonne l'instruction des dossiers pour les itinéraires les plus complexes.",
       },
       {
         type: "h2",
-        content: "Itinéraires préférentiels en Seine-Maritime",
+        content: "Itinéraires préférentiels en {DEPARTEMENT}",
       },
       {
         type: "list",
         items: [
-          "A13 : autorisée pour les catégories 1 et 2, sur autorisation pour les catégories 3+",
-          "A29 (Le Havre ↔ Amiens) : itinéraire fréquemment utilisé, restrictions la nuit",
-          "A150 (Rouen – Le Havre) : passage sous pont limité à 4,30 m à Barentin",
-          "RN27 : alternative recommandée pour les gabarits très larges",
-          "Port du Havre : protocole spécifique, coordonnez-vous avec le terminal",
+          "Axes autoroutiers principaux : autorisés pour les catégories 1 et 2, sur autorisation pour les catégories 3+",
+          "Axes secondaires : itinéraires fréquemment utilisés, restrictions possibles la nuit",
+          "Routes nationales : vérifier les passages sous pont et gabarits limités",
+          "Alternatives recommandées pour les gabarits très larges",
+          "Zone portuaire de {VILLE} : protocole spécifique, coordonnez-vous avec le terminal",
         ],
       },
     ],
   },
   {
     id: "b3",
-    slug: "axe-a13-transport-normandie-paris",
-    title: "Axe A13 Normandie–Paris : le point de passage incontournable du fret normand",
+    slug: "axes-routiers-fret-regional",
+    title: "Axes routiers principaux : le réseau incontournable du fret en {REGION}",
     excerpt:
-      "Trafic, travaux, restrictions de circulation : tout ce que les chargeurs et transporteurs doivent savoir sur l'A13 pour optimiser leurs flux.",
+      "Trafic, travaux, restrictions de circulation : tout ce que les chargeurs et transporteurs doivent savoir sur les axes régionaux pour optimiser leurs flux.",
     category: "Infrastructure",
     readTime: "6 min",
     date: "2025-02-17",
     featuredImage: "/images/blog/demenagement-paris.png",
-    author: "Bertrand Boulocher",
-    tags: ["A13", "normandie", "paris", "transport", "logistique"],
+    author: "{FONDATEUR_NOM}",
+    tags: ["transport", "logistique", "infrastructure"],
     content: [
       {
         type: "paragraph",
         content:
-          "L'autoroute A13 est la colonne vertébrale du transport routier entre la Normandie et l'Île-de-France. Avec plus de 40 000 poids lourds par semaine sur certains tronçons, elle concentre des enjeux considérables pour les transporteurs normands.",
+          "Les axes autoroutiers principaux sont la colonne vertébrale du transport routier dans notre région. Ils concentrent des enjeux considérables pour les transporteurs de {REGION}.",
       },
       {
         type: "h2",
-        content: "Les points de vigilance sur l'A13",
+        content: "Les points de vigilance sur les axes principaux",
       },
       {
         type: "list",
         items: [
-          "Tunnel de Saint-Cloud : gabarit limité à 4,30 m, interdiction aux TMD le week-end",
-          "Traversée de Rouen : bouchons récurrents entre 7h-9h et 17h-19h",
-          "Péage de Dozulé : goulot d'étranglement en période estivale",
-          "A13/A14 (Orgeval) : point de divergence critique, prévoir les reports",
-          "Zone de Caen : travaux récurrents sur le périphérique, prévoir des détours",
+          "Passages sous tunnels : gabarits limités, restrictions pour les TMD le week-end",
+          "Traversées urbaines : bouchons récurrents aux heures de pointe",
+          "Péages : goulots d'étranglement en période estivale",
+          "Échangeurs principaux : points de divergence critiques, prévoir les reports",
+          "Zones de travaux récurrents : prévoir des détours",
         ],
       },
       {
@@ -160,13 +160,13 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "Chez Transports Boulocher, nos chauffeurs connaissent l'A13 comme leur poche après 25 ans de navettes Normandie–Paris. Nous privilégions les départs havrais entre 4h et 6h du matin pour les livraisons matinales à Paris, et entre 10h et 14h pour éviter les pointes de trafic parisien en milieu de journée.",
+          "Chez {NOM_ENTREPRISE}, nos chauffeurs connaissent les axes régionaux par cœur après {ANNEES_EXPERIENCE} ans de service. Nous privilégions les départs matinaux entre 4h et 6h pour les livraisons en agglomération, et entre 10h et 14h pour éviter les pointes de trafic en milieu de journée.",
       },
       {
         type: "quote",
         content:
-          "Sur l'A13, une heure de marge au départ, c'est souvent deux heures de retard évitées à l'arrivée.",
-        author: "Bertrand Boulocher, Fondateur",
+          "Sur les grands axes, une heure de marge au départ, c'est souvent deux heures de retard évitées à l'arrivée.",
+        author: "{FONDATEUR_NOM}, Fondateur",
       },
     ],
   },
@@ -219,40 +219,40 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "Pour un transport ponctuel avec un véhicule spécifique : optez pour l'affrètement. Pour une chaîne logistique complexe, multi-étapes ou multi-modes : préférez le commissionnement. Chez Transports Boulocher, nous proposons les deux formules et vous conseillons sur la plus adaptée à votre besoin.",
+          "Pour un transport ponctuel avec un véhicule spécifique : optez pour l'affrètement. Pour une chaîne logistique complexe, multi-étapes ou multi-modes : préférez le commissionnement. Chez {NOM_ENTREPRISE}, nous proposons les deux formules et vous conseillons sur la plus adaptée à votre besoin.",
       },
     ],
   },
   {
     id: "b5",
-    slug: "port-du-havre-hub-logistique",
-    title: "Le port du Havre : premier port de France et hub logistique européen",
+    slug: "port-hub-logistique",
+    title: "Le port de {VILLE} : hub logistique et opportunité pour les transporteurs",
     excerpt:
-      "Container, roll-on roll-off, vrac solide : comprendre les flux du port du Havre pour mieux organiser vos transports pré et post-portuaires.",
+      "Container, roll-on roll-off, vrac solide : comprendre les flux portuaires pour mieux organiser vos transports pré et post-portuaires.",
     category: "Logistique",
     readTime: "7 min",
     date: "2024-12-10",
     featuredImage: "/images/blog/garde-meuble.png",
-    author: "Christophe Lecanu",
-    tags: ["port-du-havre", "conteneur", "logistique", "import-export", "maritime"],
+    author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}",
+    tags: ["port", "conteneur", "logistique", "import-export", "maritime"],
     content: [
       {
         type: "paragraph",
         content:
-          "Avec plus de 70 millions de tonnes de marchandises traitées chaque année, le port du Havre est le premier port français et le 5e port européen. Pour les transporteurs normands comme Transports Boulocher, il représente une opportunité et un défi logistique quotidien.",
+          "Les infrastructures portuaires de {VILLE} représentent une opportunité et un défi logistique quotidien pour les transporteurs de {REGION} comme {NOM_ENTREPRISE}.",
       },
       {
         type: "h2",
-        content: "Les principaux terminaux havrais",
+        content: "Les principaux terminaux",
       },
       {
         type: "list",
         items: [
-          "Terminal de France (TDF) : conteneurs, le plus grand du port",
-          "Grand Terminal de France (GTF) : deuxième terminal conteneurs",
-          "Terminal de Bougainville : roulier (voitures, engins)",
-          "Terminal Multivrac : vrac solide (céréales, ciment, sucre)",
-          "Terminal pétrolier de Gonfreville : hydrocarbures",
+          "Terminal conteneurs principal : le plus grand du port",
+          "Terminal conteneurs secondaire",
+          "Terminal roulier : voitures, engins",
+          "Terminal multivrac : vrac solide (céréales, ciment, sucre)",
+          "Terminal pétrolier : hydrocarbures",
         ],
       },
       {
@@ -262,13 +262,13 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "La zone portuaire est soumise à des réglementations spécifiques : badges et accréditations pour les chauffeurs, créneaux de livraison imposés par les terminaux, règles de circulation interne. Notre implantation Chaussée de la Moselle, à 2 km du port, nous permet d'intervenir dans les meilleurs délais pour vos enlèvements et livraisons portuaires.",
+          "La zone portuaire est soumise à des réglementations spécifiques : badges et accréditations pour les chauffeurs, créneaux de livraison imposés par les terminaux, règles de circulation interne. Notre implantation à proximité nous permet d'intervenir dans les meilleurs délais pour vos enlèvements et livraisons portuaires.",
       },
       {
         type: "quote",
         content:
-          "Être au Havre, c'est être au cœur des flux. Notre position géographique est notre premier avantage compétitif.",
-        author: "Christophe Lecanu, Gérant",
+          "Être à {VILLE}, c'est être au cœur des flux. Notre position géographique est notre premier avantage compétitif.",
+        author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}, Gérant",
       },
     ],
   },

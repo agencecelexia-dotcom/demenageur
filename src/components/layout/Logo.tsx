@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { clientConfig } from "@/config/client.config";
 
 interface LogoProps {
   light?: boolean;
@@ -7,6 +8,10 @@ interface LogoProps {
 }
 
 export default function Logo({ light = false, className }: LogoProps) {
+  const nameParts = clientConfig.NOM_ENTREPRISE.split(" ");
+  const firstWord = nameParts[0];
+  const rest = nameParts.slice(1).join(" ");
+
   return (
     <Link href="/" className={cn("flex items-center gap-2 group", className)}>
       {/* Truck icon */}
@@ -50,7 +55,7 @@ export default function Logo({ light = false, className }: LogoProps) {
             light ? "text-white" : "text-primary-900"
           )}
         >
-          Transports
+          {firstWord}
         </span>
         <span
           className={cn(
@@ -58,7 +63,7 @@ export default function Logo({ light = false, className }: LogoProps) {
             light ? "text-accent-300" : "text-accent-600"
           )}
         >
-          Boulocher
+          {rest}
         </span>
       </div>
     </Link>

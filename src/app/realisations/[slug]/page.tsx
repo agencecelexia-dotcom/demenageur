@@ -18,13 +18,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const realisation = realisations.find((r) => r.slug === slug);
   if (!realisation) return {};
-  return { title: realisation.title };
+  return {
+    title: realisation.title,
+    description: realisation.challenge.slice(0, 160),
+    openGraph: {
+      title: realisation.title,
+      description: realisation.challenge.slice(0, 160),
+      images: [{ url: realisation.featuredImage }],
+    },
+  };
 }
 
 export default async function RealisationDetailPage({ params }: Props) {
   const { slug } = await params;
-  const realisation = realisations.find((r) => r.slug === slug);
-  if (!realisation) notFound();
+  const currentIndex = realisations.findIndex((r) => r.slug === slug);
+  if (currentIndex === -1) notFound();
+
+  const realisation = realisations[currentIndex];
+  const prevRealisation = currentIndex > 0 ? realisations[currentIndex - 1] : null;
+  const nextRealisation = currentIndex < realisations.length - 1 ? realisations[currentIndex + 1] : null;
 
   return (
     <>
@@ -41,7 +53,7 @@ export default async function RealisationDetailPage({ params }: Props) {
             <h1 className="font-heading text-3xl md:text-4xl font-bold text-white mt-4 mb-4">
               {realisation.title}
             </h1>
-            <p className="text-neutral-300">{realisation.origin} → {realisation.destination}</p>
+            <p className="text-neutral-300">{realisation.origin} &rarr; {realisation.destination}</p>
           </FadeUp>
         </div>
       </section>
@@ -52,10 +64,20 @@ export default async function RealisationDetailPage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main */}
             <div className="lg:col-span-2 space-y-10">
+              {/* Image Gallery / Slider */}
               <FadeUp>
                 <div className="relative aspect-[16/9] rounded-2xl overflow-hidden">
                   <Image src={realisation.featuredImage} alt={realisation.title} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 66vw" />
                 </div>
+                {realisation.images.length > 1 && (
+                  <div className="mt-4 grid grid-cols-4 gap-3">
+                    {realisation.images.map((img, i) => (
+                      <div key={i} className="relative aspect-[4/3] rounded-lg overflow-hidden border-2 border-transparent hover:border-accent-500 transition-colors">
+                        <Image src={img} alt={`${realisation.title} - photo ${i + 1}`} fill className="object-cover" sizes="(max-width: 1024px) 25vw, 16vw" />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </FadeUp>
 
               <FadeUp delay={0.1}>
@@ -84,7 +106,7 @@ export default async function RealisationDetailPage({ params }: Props) {
             <div className="space-y-6">
               <FadeUp delay={0.1}>
                 <div className="p-6 rounded-2xl bg-neutral-50 border border-neutral-200">
-                  <h3 className="font-heading text-lg font-bold text-neutral-900 mb-4">Détails du déménagement</h3>
+                  <h3 className="font-heading text-lg font-bold text-neutral-900 mb-4">Détails du projet</h3>
                   <dl className="space-y-3 text-sm">
                     {[
                       { label: "Client", value: realisation.client },
@@ -118,11 +140,56 @@ export default async function RealisationDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <div className="py-8 bg-neutral-50 text-center">
-        <Link href="/realisations" className="text-sm text-primary-700 hover:text-primary-900 transition-colors">
-          ← Retour aux réalisations
-        </Link>
-      </div>
+      {/* Prev / Next Navigation */}
+      <section className="py-8 bg-neutral-50 border-t border-neutral-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="flex items-center justify-between">
+            {prevRealisation ? (
+              <Link
+                href={`/realisations/${prevRealisation.slug}`}
+                className="group flex items-center gap-3 text-sm text-neutral-600 hover:text-primary-900 transition-colors"
+              >
+                <svg className="h-5 w-5 text-neutral-400 group-hover:text-primary-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+                <div className="text-left">
+                  <p className="text-xs text-neutral-400">Précédent</p>
+                  <p className="font-medium line-clamp-1 max-w-[200px] sm:max-w-xs">{prevRealisation.title}</p>
+                </div>
+              </Link>
+            ) : (
+              <div />
+            )}
+
+            <Link href="/realisations" className="text-sm text-primary-700 hover:text-primary-900 transition-colors hidden sm:block">
+              Toutes les réalisations
+            </Link>
+
+            {nextRealisation ? (
+              <Link
+                href={`/realisations/${nextRealisation.slug}`}
+                className="group flex items-center gap-3 text-sm text-neutral-600 hover:text-primary-900 transition-colors"
+              >
+                <div className="text-right">
+                  <p className="text-xs text-neutral-400">Suivant</p>
+                  <p className="font-medium line-clamp-1 max-w-[200px] sm:max-w-xs">{nextRealisation.title}</p>
+                </div>
+                <svg className="h-5 w-5 text-neutral-400 group-hover:text-primary-700 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            ) : (
+              <div />
+            )}
+          </div>
+
+          <div className="mt-4 text-center sm:hidden">
+            <Link href="/realisations" className="text-sm text-primary-700 hover:text-primary-900 transition-colors">
+              &larr; Retour aux réalisations
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

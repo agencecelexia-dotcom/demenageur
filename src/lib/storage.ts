@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import fsSync from "fs";
 import path from "path";
 
 const DIR = process.env.STORAGE_PATH ?? path.join(process.cwd(), "storage");
@@ -12,6 +13,30 @@ async function ensureFile(filePath: string) {
     await fs.mkdir(DIR, { recursive: true });
     await fs.writeFile(filePath, "[]", "utf-8");
   }
+}
+
+// ─── Generic CRUD (sync) ────────────────────────────────────────────────────
+
+export function readData<T>(filename: string, defaultData: T): T {
+  const filepath = path.join(DIR, filename);
+  try {
+    if (fsSync.existsSync(filepath)) {
+      return JSON.parse(fsSync.readFileSync(filepath, "utf-8"));
+    }
+  } catch {
+    // fallback to default
+  }
+  return defaultData;
+}
+
+export function writeData<T>(filename: string, data: T): void {
+  if (!fsSync.existsSync(DIR)) {
+    fsSync.mkdirSync(DIR, { recursive: true });
+  }
+  fsSync.writeFileSync(
+    path.join(DIR, filename),
+    JSON.stringify(data, null, 2)
+  );
 }
 
 // ─── Submissions ────────────────────────────────────────────────────────────

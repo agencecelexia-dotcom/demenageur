@@ -1,73 +1,113 @@
 "use client";
+
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { clientConfig } from "@/config/client.config";
 
-export default function AdminLogin() {
-  const router = useRouter();
+export default function AdminLoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setError("");
     setLoading(true);
+    setError("");
 
-    const res = await fetch("/api/admin/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
-    });
+    try {
+      const res = await fetch("/api/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
 
-    setLoading(false);
-
-    if (res.ok) {
-      router.push("/admin/dashboard");
-      router.refresh();
-    } else {
-      setError("Mot de passe incorrect.");
+      if (res.ok) {
+        router.push("/admin/dashboard");
+        router.refresh();
+      } else {
+        setError("Mot de passe incorrect");
+      }
+    } catch {
+      setError("Erreur de connexion. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
     }
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950">
-      <div className="w-full max-w-sm px-4">
-        {/* Logo / titre */}
-        <div className="mb-10 text-center">
-          <div className="inline-flex items-center justify-center h-14 w-14 bg-gradient-to-br from-accent-400 to-accent-600 rounded-2xl mb-5 shadow-lg shadow-accent-500/20">
-            <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-primary-900">
+      <div className="w-full max-w-sm px-6">
+        {/* Logo / Brand */}
+        <div className="mb-8 text-center">
+          <div className="mb-3 inline-flex h-14 w-14 items-center justify-center rounded-full bg-accent-500">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M1 3h15v13H1z" />
+              <path d="M16 8h4l3 3v5h-7V8z" />
+              <circle cx="5.5" cy="18.5" r="2.5" />
+              <circle cx="18.5" cy="18.5" r="2.5" />
             </svg>
           </div>
-          <h1 className="text-xl font-semibold text-white tracking-tight">Administration</h1>
-          <p className="mt-1 text-sm text-neutral-500">Transports Boulocher</p>
+          <h1 className="font-heading text-2xl font-bold text-white">
+            {clientConfig.NOM_ENTREPRISE}
+          </h1>
+          <p className="mt-1 text-sm text-neutral-300">Administration</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-neutral-900/80 backdrop-blur-sm border border-neutral-800 rounded-2xl p-8 shadow-2xl">
-          <label className="block text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-3">
-            Mot de passe
-          </label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="••••"
-            required
-            className="w-full bg-neutral-800/70 border border-neutral-700 text-white px-4 py-3 text-sm rounded-xl placeholder:text-neutral-600 focus:outline-none focus:border-accent-500 focus:ring-2 focus:ring-accent-500/20 transition-all duration-200"
-          />
+        {/* Login Card */}
+        <div className="rounded-xl bg-white/10 p-8 backdrop-blur-sm">
+          <h2 className="mb-6 text-center text-lg font-semibold text-white">
+            Connexion
+          </h2>
 
-          {error && (
-            <p className="mt-3 text-xs text-red-400 bg-red-500/10 px-3 py-2 rounded-lg">{error}</p>
-          )}
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label
+                htmlFor="password"
+                className="mb-1.5 block text-sm font-medium text-neutral-200"
+              >
+                Mot de passe
+              </label>
+              <input
+                id="password"
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••••••"
+                autoFocus
+                className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-2.5 text-white placeholder-white/40 outline-none transition focus:border-accent-500 focus:ring-2 focus:ring-accent-500/30"
+                required
+              />
+            </div>
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="mt-6 w-full bg-gradient-to-r from-accent-500 to-accent-600 text-white font-semibold text-sm py-3 rounded-xl hover:from-accent-600 hover:to-accent-700 hover:shadow-lg hover:shadow-accent-500/25 transition-all duration-300 disabled:opacity-50"
-          >
-            {loading ? "Connexion…" : "Se connecter"}
-          </button>
-        </form>
+            {error && (
+              <p className="rounded-lg bg-red-500/20 px-3 py-2 text-sm text-red-200">
+                {error}
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full rounded-lg bg-accent-500 px-4 py-2.5 font-semibold text-white transition hover:bg-accent-600 disabled:opacity-60"
+            >
+              {loading ? "Connexion..." : "Se connecter"}
+            </button>
+          </form>
+        </div>
+
+        <p className="mt-6 text-center text-xs text-neutral-400">
+          Accès réservé aux administrateurs
+        </p>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@
     "phone": "06 12 34 56 78",
     "serviceType": "demenagement_local",
     "moveVolume": "T3 (40-60m³)",
-    "projectDescription": "Bonjour, je souhaite déménager mon T3 du centre du Havre vers Sainte-Adresse courant mars. J'ai un piano droit et quelques meubles fragiles. Merci de me faire un devis.",
+    "projectDescription": "Bonjour, je souhaite déménager mon T3 du centre de {VILLE} vers {COMMUNE_1} courant mars. J'ai un piano droit et quelques meubles fragiles. Merci de me faire un devis.",
     "read": false
   },
   {
@@ -20,7 +20,7 @@
     "phone": "06 98 76 54 32",
     "serviceType": "demenagement_entreprise",
     "moveVolume": "Bureaux 200m²",
-    "projectDescription": "Nous déménageons nos bureaux de 200m² de la zone industrielle de Gonfreville vers le quartier d'affaires du Havre. 15 postes de travail, serveur informatique, archives. Date souhaitée : week-end du 8-9 mars.",
+    "projectDescription": "Nous déménageons nos bureaux de 200m² de la zone industrielle de {COMMUNE_2} vers le quartier d'affaires de {VILLE}. 15 postes de travail, serveur informatique, archives. Date souhaitée : week-end du 8-9 mars.",
     "read": false
   },
   {
@@ -32,7 +32,7 @@
     "phone": "07 45 23 67 89",
     "serviceType": "demenagement_longue_distance",
     "moveVolume": "Maison (80-120m³)",
-    "projectDescription": "Déménagement d'une maison de 120m² du Havre vers Lyon. Famille de 4 personnes, beaucoup de cartons, 2 vélos, trampoline de jardin. Flexible sur les dates en mars/avril.",
+    "projectDescription": "Déménagement d'une maison de 120m² de {VILLE} vers Lyon. Famille de 4 personnes, beaucoup de cartons, 2 vélos, trampoline de jardin. Flexible sur les dates en mars/avril.",
     "read": true
   },
   {
@@ -68,7 +68,7 @@
     "phone": "07 11 22 33 44",
     "serviceType": "transport_specifique",
     "moveVolume": "Objet unique",
-    "projectDescription": "Transport d'un coffre-fort (environ 800kg) du rez-de-chaussée d'un immeuble à Fécamp vers ma nouvelle maison à Étretat. Accès difficile des deux côtés (escaliers, passage étroit).",
+    "projectDescription": "Transport d'un coffre-fort (environ 800kg) du rez-de-chaussée d'un immeuble à {COMMUNE_1} vers ma nouvelle maison à {COMMUNE_3}. Accès difficile des deux côtés (escaliers, passage étroit).",
     "read": true
   },
   {
@@ -92,7 +92,7 @@
     "phone": "06 22 33 44 55",
     "serviceType": "demenagement_longue_distance",
     "moveVolume": "Maison (80-120m³)",
-    "projectDescription": "Retraité, je quitte Le Havre pour rejoindre ma famille en Provence (Aix). Grande maison avec garage. Beaucoup de meubles anciens et fragiles. Je voudrais un service premium avec emballage complet.",
+    "projectDescription": "Retraité, je quitte {VILLE} pour rejoindre ma famille en Provence (Aix). Grande maison avec garage. Beaucoup de meubles anciens et fragiles. Je voudrais un service premium avec emballage complet.",
     "read": true
   }
 ]

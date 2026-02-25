@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import SplitText from "@/components/animations/SplitText";
+import { clientConfig } from "@/config/client.config";
 
 export default function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export default function HeroSection() {
       {/* Background */}
       <Image
         src="/images/hero-main.jpeg"
-        alt="Transports Boulocher — transporteur routier de fret Le Havre"
+        alt={`${clientConfig.NOM_ENTREPRISE} — transporteur routier de fret ${clientConfig.VILLE}`}
         fill
         priority
         className="object-cover object-center"
@@ -28,12 +29,12 @@ export default function HeroSection() {
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
           className="mb-6 text-xs font-semibold tracking-[0.22em] uppercase text-accent-300"
         >
-          Transporteur routier de fret — Normandie & Europe depuis 1999
+          {clientConfig.ACCROCHE_HERO}
         </motion.p>
 
         {/* H1 */}
         <SplitText
-          text="Votre Fret, Notre Fiabilité."
+          text={clientConfig.SLOGAN}
           className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight"
           delay={0.15}
         />
@@ -45,8 +46,7 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
           className="mt-7 max-w-xl mx-auto text-base md:text-lg text-white/75 leading-relaxed"
         >
-          Transport routier, logistique et affrètement depuis Le Havre vers toute la France et l&apos;Europe.
-          Flotte Euro 6, suivi GPS, devis sous 2h.
+          {clientConfig.DESCRIPTION_ENTREPRISE}
         </motion.p>
 
         {/* CTAs */}
@@ -83,7 +83,7 @@ export default function HeroSection() {
             "Flotte Euro 6 GPS tracée",
             "Devis sous 2h",
             "Livraison garantie",
-            "+25 ans d'expérience",
+            `+${clientConfig.ANNEES_EXPERIENCE} ans d'expérience`,
           ].map((item) => (
             <span key={item} className="flex items-center gap-2 text-xs text-white/55">
               <span className="h-1 w-1 rounded-full bg-accent-400 shrink-0" />

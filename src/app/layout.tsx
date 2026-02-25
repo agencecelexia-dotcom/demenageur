@@ -3,29 +3,22 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import AnalyticsTracker from "@/components/features/AnalyticsTracker";
+import { clientConfig } from "@/config/client.config";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://transports-boulocher.fr"),
+  metadataBase: new URL(`https://${clientConfig.DOMAINE}`),
   title: {
-    default: "Transports Boulocher | Transporteur Routier Fret — Le Havre & Normandie",
-    template: "%s | Transports Boulocher",
+    default: clientConfig.META_TITLE,
+    template: `%s | ${clientConfig.NOM_ENTREPRISE}`,
   },
-  description:
-    "Transports Boulocher — transporteur routier de fret depuis Le Havre depuis 1999. Transport interurbain, logistique, affrètement, transport européen. Devis sous 2h.",
-  keywords: [
-    "transporteur le havre",
-    "transport routier normandie",
-    "fret seine-maritime",
-    "affrètement normandie",
-    "logistique le havre",
-    "transports boulocher",
-  ],
-  authors: [{ name: "Transports Boulocher" }],
+  description: clientConfig.META_DESCRIPTION,
+  keywords: clientConfig.META_KEYWORDS.split(", "),
+  authors: [{ name: clientConfig.NOM_ENTREPRISE }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    siteName: "Transports Boulocher",
+    siteName: clientConfig.NOM_ENTREPRISE,
     images: [{ url: "/images/og-image.png", width: 1200, height: 630 }],
   },
 };

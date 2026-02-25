@@ -1,21 +1,27 @@
 import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { clientConfig } from "@/config/client.config";
 
-const ADMIN_PASSWORD = "1234";
-const ADMIN_TOKEN = "bch-admin-session-v1";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || clientConfig.ADMIN_PASSWORD;
 
-export async function POST(req: Request) {
-  const { password } = await req.json();
-
+export async function POST(request: Request) {
+  const { password } = await request.json();
   if (password !== ADMIN_PASSWORD) {
-    return NextResponse.json({ error: "Mot de passe incorrect." }, { status: 401 });
+    return NextResponse.json({ error: "Mot de passe incorrect" }, { status: 401 });
   }
-
-  const res = NextResponse.json({ success: true });
-  res.cookies.set("admin_auth", ADMIN_TOKEN, {
+  const cookieStore = await cookies();
+  cookieStore.set("adminAuth", password, {
     httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
     sameSite: "lax",
+    maxAge: 60 * 60 * 24 * 7,
     path: "/",
-    maxAge: 60 * 60 * 24 * 7, // 7 days
   });
-  return res;
+  return NextResponse.json({ ok: true });
+}
+
+export async function DELETE() {
+  const cookieStore = await cookies();
+  cookieStore.delete("adminAuth");
+  return NextResponse.json({ ok: true });
 }

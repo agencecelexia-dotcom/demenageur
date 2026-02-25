@@ -6,11 +6,11 @@ import StatsSection from "@/components/sections/StatsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CTASection from "@/components/sections/CTASection";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
-  title: "Transports Boulocher | Transporteur Routier de Fret — Le Havre & Normandie",
-  description:
-    "Transporteur routier de fret depuis Le Havre depuis 1999. Transport interurbain, logistique, affrètement et transport européen. Devis sous 2h.",
+  title: clientConfig.META_TITLE,
+  description: clientConfig.META_DESCRIPTION,
 };
 
 export default function Home() {

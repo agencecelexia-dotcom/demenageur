@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FadeUp from "@/components/animations/FadeUp";
+import { clientConfig } from "@/config/client.config";
 
 const reasons = [
   {
@@ -8,11 +9,11 @@ const reasons = [
   },
   {
     title: "Ponctualité et fiabilité",
-    desc: "Depuis 25 ans, nous honorons nos engagements de livraison. Notre taux de respect des délais dépasse 97% sur l'ensemble de nos tournées.",
+    desc: `Depuis ${clientConfig.ANNEES_EXPERIENCE} ans, nous honorons nos engagements de livraison. Notre taux de respect des délais dépasse 97% sur l'ensemble de nos tournées.`,
   },
   {
     title: "Équipe locale et réactive",
-    desc: "Basés à Le Havre, nos équipes connaissent le tissu industriel normand et les contraintes du port. Un devis en moins de 2 heures sur demande.",
+    desc: `Basés à ${clientConfig.VILLE}, nos équipes connaissent le tissu industriel de ${clientConfig.REGION} et les contraintes locales. Un devis en moins de 2 heures sur demande.`,
   },
   {
     title: "Tarification claire et compétitive",
@@ -35,7 +36,7 @@ export default function WhyChooseUs() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
                 src="/images/about-team.png"
-                alt="Équipe Transports Boulocher au travail"
+                alt={`Équipe ${clientConfig.NOM_ENTREPRISE} au travail`}
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -50,7 +51,7 @@ export default function WhyChooseUs() {
                 Nos engagements
               </p>
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-neutral-900 tracking-tight mb-12">
-                Pourquoi Confier Votre Fret à Boulocher ?
+                Pourquoi Confier Votre Fret à {clientConfig.NOM_ENTREPRISE} ?
               </h2>
             </FadeUp>
 

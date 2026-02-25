@@ -4,11 +4,11 @@ import Link from "next/link";
 import FadeUp from "@/components/animations/FadeUp";
 import { team } from "@/data/team";
 import { company } from "@/data/company";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
-  title: "À Propos — Transports Boulocher",
-  description:
-    "Découvrez l'histoire de Transports Boulocher, transporteur routier de fret basé au Havre depuis 1999. Rencontrez notre équipe et découvrez nos valeurs.",
+  title: `À Propos — ${clientConfig.NOM_ENTREPRISE}`,
+  description: `Découvrez l'histoire de ${clientConfig.NOM_ENTREPRISE}, transporteur routier de fret basé à ${clientConfig.VILLE} depuis ${clientConfig.ANNEE_CREATION}. Rencontrez notre équipe et découvrez nos valeurs.`,
 };
 
 export default function AProposPage() {
@@ -55,7 +55,7 @@ export default function AProposPage() {
             {[
               { title: "Fiabilité", desc: "Chaque livraison est un engagement. Nous planifions, coordonnons et exécutons avec la même rigueur que pour notre premier client.", icon: "🏆" },
               { title: "Transparence", desc: "Un devis est un contrat. Nous ne pratiquons aucuns frais cachés et informons proactivement sur chaque étape de l'acheminement.", icon: "🤝" },
-              { title: "Proximité", desc: "Ancrés en Normandie depuis 1999, nous connaissons le tissu économique local et cultivons des relations durables avec nos clients.", icon: "🚛" },
+              { title: "Proximité", desc: `Ancrés en ${clientConfig.REGION} depuis ${clientConfig.ANNEE_CREATION}, nous connaissons le tissu économique local et cultivons des relations durables avec nos clients.`, icon: "🚛" },
             ].map((v, i) => (
               <FadeUp key={v.title} delay={i * 0.1}>
                 <div className="text-center p-8 rounded-2xl bg-primary-50 border border-primary-100">
