@@ -52,7 +52,7 @@ Single large navy blue moving truck driving on a French autoroute highway at sun
 
 ### `demenagement-international.jpg` — 1200 × 800 px
 ```
-Wooden shipping crates being loaded into a cargo container at Le Havre port, France, professional movers in safety vests directing operations, container ship in background, golden hour lighting, wide establishing shot, photorealistic
+Wooden shipping crates being loaded into a cargo container at a French port, professional movers in safety vests directing operations, container ship in background, golden hour lighting, wide establishing shot, photorealistic
 ```
 
 ### `garde-meuble-stockage.jpg` — 1200 × 800 px

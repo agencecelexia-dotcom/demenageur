@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     await saveSubmission({ firstName, lastName, email, phone, serviceType, moveVolume, projectDescription });
 
     // TODO: send email via Resend
-    // await sendEmail({ to: "direction@transportsboulocher.fr", ... })
+    // await sendEmail({ to: clientConfig.EMAIL, ... })
 
     return NextResponse.json({ success: true }, { status: 200 });
   } catch {
