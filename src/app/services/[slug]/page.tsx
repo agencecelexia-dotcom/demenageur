@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import FadeUp from "@/components/animations/FadeUp";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { clientConfig } from "@/config/client.config";
 
 interface Props {
@@ -58,6 +59,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       {/* Content */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.title }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             {/* Main */}
             <div className="lg:col-span-3">

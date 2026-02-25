@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
+import ScrollToTop from "@/components/ui/ScrollToTop";
+import FloatingCTA from "@/components/ui/FloatingCTA";
 import AnalyticsTracker from "@/components/features/AnalyticsTracker";
 import { clientConfig } from "@/config/client.config";
 import "./globals.css";
@@ -45,6 +47,8 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <ScrollToTop />
+        <FloatingCTA />
       </body>
     </html>
   );

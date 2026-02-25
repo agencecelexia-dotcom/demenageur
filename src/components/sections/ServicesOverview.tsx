@@ -51,9 +51,11 @@ export default function ServicesOverview() {
                 <p className="text-sm text-neutral-500 leading-relaxed flex-1">
                   {svc.shortDescription}
                 </p>
-                <div className="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-accent-600 bg-accent-50 px-3 py-1.5 rounded-full group-hover:bg-accent-100 group-hover:text-accent-700 transition-all duration-300">
+                <div className="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-primary-700 group-hover:text-accent-600 transition-all duration-300">
                   <span>En savoir plus</span>
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                  <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
                 </div>
               </Link>
             </FadeUp>

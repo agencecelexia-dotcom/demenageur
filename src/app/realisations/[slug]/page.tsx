@@ -5,6 +5,7 @@ import Link from "next/link";
 import { realisations } from "@/data/realisations";
 import { REALISATION_CATEGORY_LABELS } from "@/types";
 import FadeUp from "@/components/animations/FadeUp";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -61,6 +62,7 @@ export default async function RealisationDetailPage({ params }: Props) {
       {/* Content */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <Breadcrumbs items={[{ label: "Réalisations", href: "/realisations" }, { label: realisation.title }]} />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Main */}
             <div className="lg:col-span-2 space-y-10">

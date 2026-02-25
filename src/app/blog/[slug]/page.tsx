@@ -6,6 +6,7 @@ import { blogPosts } from "@/data/blog-posts";
 import { formatDate } from "@/lib/utils";
 import type { BlogSection } from "@/types";
 import FadeUp from "@/components/animations/FadeUp";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -70,6 +71,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Hero */}
       <section className="pt-32 pb-0">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
           <FadeUp>
             <div className="mb-6">
               <span className="inline-flex items-center px-3 py-1 rounded-full bg-accent-100 text-accent-700 text-xs font-semibold">
