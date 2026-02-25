@@ -1,4 +1,4 @@
-# Images à générer — TransLog Pro
+# Images à générer — Nom de l'Entreprise
 
 Générez ces 26 images avec un outil IA (Midjourney, DALL·E 3, Firefly…) puis déposez-les dans les sous-dossiers correspondants de `/public/images/`.
 
@@ -28,7 +28,7 @@ Dramatic low-angle shot looking up at professional movers carrying boxes up brig
 
 ### `og-image.jpg` — 1200 × 630 px
 ```
-TransLog Pro moving company branded promotional image, navy background, amber accent colors, professional moving truck silhouette, clean modern design layout, no text, professional advertising photography
+Nom de l'Entreprise moving company branded promotional image, navy background, amber accent colors, professional moving truck silhouette, clean modern design layout, no text, professional advertising photography
 ```
 
 ---

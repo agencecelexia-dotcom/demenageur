@@ -6,9 +6,9 @@
     "lastName": "Lefebvre",
     "email": "m.lefebvre@gmail.com",
     "phone": "06 12 34 56 78",
-    "serviceType": "demenagement_local",
-    "moveVolume": "T3 (40-60m³)",
-    "projectDescription": "Bonjour, je souhaite déménager mon T3 du centre de Paris vers Nanterre courant mars. J'ai un piano droit et quelques meubles fragiles. Merci de me faire un devis.",
+    "serviceType": "transport_fret",
+    "moveVolume": "2 palettes",
+    "projectDescription": "Bonjour, je souhaite faire transporter 2 palettes de matériel de Votre Ville vers Commune Voisine 1 courant mars. Merci de me faire un devis.",
     "read": false
   },
   {
@@ -18,9 +18,9 @@
     "lastName": "Durand",
     "email": "jpdurand@orange.fr",
     "phone": "06 98 76 54 32",
-    "serviceType": "demenagement_entreprise",
-    "moveVolume": "Bureaux 200m²",
-    "projectDescription": "Nous déménageons nos bureaux de 200m² de la zone industrielle de Cergy vers le quartier d'affaires de Paris. 15 postes de travail, serveur informatique, archives. Date souhaitée : week-end du 8-9 mars.",
+    "serviceType": "logistique",
+    "moveVolume": "Entrepôt 200m²",
+    "projectDescription": "Nous cherchons une solution logistique pour stocker et expédier nos produits depuis Votre Ville. Environ 200 références, flux entrant et sortant quotidien.",
     "read": false
   },
   {
@@ -30,9 +30,9 @@
     "lastName": "Martin",
     "email": "sophie.martin@laposte.net",
     "phone": "07 45 23 67 89",
-    "serviceType": "demenagement_longue_distance",
-    "moveVolume": "Maison (80-120m³)",
-    "projectDescription": "Déménagement d'une maison de 120m² de Paris vers Lyon. Famille de 4 personnes, beaucoup de cartons, 2 vélos, trampoline de jardin. Flexible sur les dates en mars/avril.",
+    "serviceType": "affretement",
+    "moveVolume": "Semi-remorque complète",
+    "projectDescription": "Besoin d'un semi-remorque pour un chargement ponctuel de Votre Ville vers Lyon. 24 tonnes de matériaux de construction. Flexible sur les dates en mars/avril.",
     "read": true
   },
   {
@@ -42,9 +42,9 @@
     "lastName": "Bonneau",
     "email": "p.bonneau@sfr.fr",
     "phone": "06 33 22 11 00",
-    "serviceType": "garde_meubles",
-    "moveVolume": "10m³",
-    "projectDescription": "Suite à une mutation temporaire, j'ai besoin de stocker mes meubles pendant 6 mois. Principalement un canapé d'angle, une armoire, et environ 20 cartons. Accès ponctuel souhaité.",
+    "serviceType": "transport_europeen",
+    "moveVolume": "Lot complet",
+    "projectDescription": "Expédition de marchandises depuis Votre Ville vers le Benelux. 15 palettes de produits industriels. Besoin de gestion des formalités douanières.",
     "read": true
   },
   {
@@ -54,9 +54,9 @@
     "lastName": "Rousseau",
     "email": "n.rousseau@hotmail.fr",
     "phone": "06 77 88 99 00",
-    "serviceType": "demenagement_international",
-    "moveVolume": "T4 (60-80m³)",
-    "projectDescription": "Expatriation vers Londres avec ma famille. Appartement T4 complet à déménager. Besoin d'aide pour les formalités douanières et le transport transmanche. Départ prévu mi-avril.",
+    "serviceType": "commissionnaire",
+    "moveVolume": "Multi-modes",
+    "projectDescription": "Organisation complète d'un acheminement multi-modes (route + mer) depuis Votre Ville vers Barcelone. Marchandise fragile, besoin d'un interlocuteur unique.",
     "read": true
   },
   {
@@ -66,9 +66,9 @@
     "lastName": "Petit",
     "email": "lucas.petit@gmail.com",
     "phone": "07 11 22 33 44",
-    "serviceType": "transport_specifique",
-    "moveVolume": "Objet unique",
-    "projectDescription": "Transport d'un coffre-fort (environ 800kg) du rez-de-chaussée d'un immeuble à Nanterre vers ma nouvelle maison à Rouen. Accès difficile des deux côtés (escaliers, passage étroit).",
+    "serviceType": "manutention",
+    "moveVolume": "Matériel lourd",
+    "projectDescription": "Besoin d'une équipe de manutention pour décharger un camion de machines industrielles (3 pièces, environ 2 tonnes chacune) sur notre site à Commune Voisine 2.",
     "read": true
   },
   {
@@ -78,9 +78,9 @@
     "lastName": "Garnier",
     "email": "emilie.garnier@outlook.com",
     "phone": "06 55 44 33 22",
-    "serviceType": "demenagement_local",
-    "moveVolume": "Studio (15-20m³)",
-    "projectDescription": "Étudiante, je quitte ma résidence universitaire pour un studio en ville. Peu de meubles mais un lit double, un bureau et des cartons de livres. Budget serré, y a-t-il des tarifs étudiants ?",
+    "serviceType": "transport_fret",
+    "moveVolume": "5 palettes",
+    "projectDescription": "Transport de 5 palettes de produits alimentaires de Commune Voisine 1 vers Commune Voisine 3. Livraison souhaitée avant 7h du matin.",
     "read": true
   },
   {
@@ -90,9 +90,9 @@
     "lastName": "Moreau",
     "email": "a.moreau@wanadoo.fr",
     "phone": "06 22 33 44 55",
-    "serviceType": "demenagement_longue_distance",
-    "moveVolume": "Maison (80-120m³)",
-    "projectDescription": "Retraité, je quitte Paris pour rejoindre ma famille en Provence (Aix). Grande maison avec garage. Beaucoup de meubles anciens et fragiles. Je voudrais un service premium avec emballage complet.",
+    "serviceType": "transport_fret",
+    "moveVolume": "Lot complet",
+    "projectDescription": "Transport régulier hebdomadaire entre Votre Ville et Marseille. Environ 20 tonnes par semaine de matériaux de construction. Recherche un partenaire fiable sur le long terme.",
     "read": true
   }
 ]

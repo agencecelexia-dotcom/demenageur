@@ -35,7 +35,7 @@ export default function AProposPage() {
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
                 <Image
                   src="/images/hero-about.png"
-                  alt="Équipe TransLog Pro"
+                  alt={`Équipe ${clientConfig.NOM_ENTREPRISE}`}
                   fill className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import FadeUp from "@/components/animations/FadeUp";
+import { clientConfig } from "@/config/client.config";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -46,8 +47,8 @@ export default async function ServiceDetailPage({ params }: Props) {
               <Link href="/contact" className="px-8 py-4 rounded-lg bg-accent-500 text-white font-semibold hover:bg-accent-600 transition-colors">
                 Demander un devis gratuit
               </Link>
-              <a href="tel:+33142601122" className="px-8 py-4 rounded-lg border border-white/30 text-white font-semibold hover:bg-white/10 transition-colors">
-                01 42 60 11 22
+              <a href={`tel:${clientConfig.TELEPHONE.replace(/\s/g, "")}`} className="px-8 py-4 rounded-lg border border-white/30 text-white font-semibold hover:bg-white/10 transition-colors">
+                {clientConfig.TELEPHONE}
               </a>
             </div>
           </FadeUp>

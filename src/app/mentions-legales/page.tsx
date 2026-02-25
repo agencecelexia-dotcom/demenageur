@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { company } from "@/data/company";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
   title: "Mentions Légales",
-  description: "Mentions légales de TransLog Pro.",
+  description: `Mentions légales de ${clientConfig.NOM_ENTREPRISE}.`,
 };
 
 export default function MentionsLegalesPage() {

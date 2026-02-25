@@ -1,4 +1,4 @@
-# TransLog Pro — Guide du projet
+# demenageur-template — Guide du projet
 
 ## Stack technique
 
@@ -31,10 +31,8 @@ Accent (Amber) : oklch(72% 0.18 65)
 
 ## Identité de l'entreprise
 
-- **Nom :** TransLog Pro
-- **Tél :** +33 1 42 60 11 22
-- **Email :** contact@translogpro.fr
-- **Adresse :** 14 Rue de la Paix, 75001 Paris
+Toutes les informations de l'entreprise (nom, telephone, email, adresse, etc.) sont centralisees dans `/src/config/client.config.ts`.
+Modifier ce fichier unique pour personnaliser le site — ne pas hardcoder ces valeurs dans les composants.
 
 ## Déploiement
 

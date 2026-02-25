@@ -1,4 +1,5 @@
 import { company } from "@/data/company";
+import { clientConfig } from "@/config/client.config";
 
 export default function GoogleMap() {
   const query = encodeURIComponent(
@@ -8,7 +9,7 @@ export default function GoogleMap() {
   return (
     <div className="w-full h-64 rounded-2xl overflow-hidden border border-neutral-200">
       <iframe
-        title="TransLog Pro - Localisation"
+        title={`${clientConfig.NOM_ENTREPRISE} - Localisation`}
         width="100%"
         height="100%"
         style={{ border: 0 }}

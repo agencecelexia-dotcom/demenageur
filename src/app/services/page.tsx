@@ -3,11 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeUp from "@/components/animations/FadeUp";
 import { services } from "@/data/services";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
   title: "Nos Services de Déménagement",
-  description:
-    "Découvrez tous les services de déménagement TransLog Pro : résidentiel, entreprise, international, garde-meuble, emballage. Devis gratuit sous 24h.",
+  description: `Découvrez tous les services de déménagement ${clientConfig.NOM_ENTREPRISE} : résidentiel, entreprise, international, garde-meuble, emballage. Devis gratuit sous 24h.`,
 };
 
 const iconSvgs: Record<string, string> = {
@@ -33,7 +33,7 @@ export default function ServicesPage() {
               Tous Nos Services de Déménagement
             </h1>
             <p className="max-w-2xl mx-auto text-neutral-300">
-              Du déménagement local au transfert intercontinental, TransLog Pro couvre l&apos;ensemble
+              Du déménagement local au transfert intercontinental, {clientConfig.NOM_ENTREPRISE} couvre l&apos;ensemble
               de vos besoins avec le même niveau d&apos;exigence et de soin.
             </p>
           </FadeUp>

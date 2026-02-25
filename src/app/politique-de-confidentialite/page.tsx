@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { company } from "@/data/company";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
   title: "Politique de Confidentialité",
-  description: "Politique de confidentialité et protection des données de TransLog Pro.",
+  description: `Politique de confidentialité et protection des données de ${clientConfig.NOM_ENTREPRISE}.`,
 };
 
 export default function PolitiqueConfidentialitePage() {

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { contactFormSchema } from "@/lib/validation";
+import { clientConfig } from "@/config/client.config";
 
 const serviceOptions = [
   { value: "residentiel", label: "Déménagement résidentiel" },
@@ -259,7 +260,7 @@ export default function ContactForm() {
           className="mt-0.5 h-4 w-4 rounded border-neutral-300 text-primary-600 focus:ring-primary-500"
         />
         <label htmlFor="rgpdConsent" className="text-xs text-neutral-600 leading-relaxed">
-          J&apos;accepte que TransLog Pro utilise mes données pour répondre à ma demande de devis.
+          J&apos;accepte que {clientConfig.NOM_ENTREPRISE} utilise mes données pour répondre à ma demande de devis.
           Conformément au RGPD, vous disposez d&apos;un droit d&apos;accès et de suppression de vos données.
           Consultez notre{" "}
           <a href="/politique-de-confidentialite" className="text-primary-600 hover:underline">

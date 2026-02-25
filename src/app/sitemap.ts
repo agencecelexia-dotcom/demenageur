@@ -2,8 +2,9 @@ import type { MetadataRoute } from "next";
 import { services } from "@/data/services";
 import { realisations } from "@/data/realisations";
 import { blogPosts } from "@/data/blog-posts";
+import { clientConfig } from "@/config/client.config";
 
-const BASE_URL = "https://translogpro.fr";
+const BASE_URL = `https://${clientConfig.DOMAINE}`;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

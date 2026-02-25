@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import FadeUp from "@/components/animations/FadeUp";
 import BlogCard from "@/components/features/BlogCard";
 import { blogPosts } from "@/data/blog-posts";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
   title: "Blog — Conseils Déménagement",
@@ -20,7 +21,7 @@ export default function BlogPage() {
               Ressources
             </p>
             <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
-              Le Blog TransLog Pro
+              Le Blog {clientConfig.NOM_ENTREPRISE}
             </h1>
             <p className="max-w-2xl mx-auto text-neutral-300">
               Conseils d&apos;experts, guides pratiques et astuces de nos équipes pour que votre

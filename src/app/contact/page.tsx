@@ -3,11 +3,11 @@ import FadeUp from "@/components/animations/FadeUp";
 import ContactForm from "@/components/features/ContactForm";
 import GoogleMap from "@/components/features/GoogleMap";
 import { company } from "@/data/company";
+import { clientConfig } from "@/config/client.config";
 
 export const metadata: Metadata = {
   title: "Contact — Demandez un Devis Gratuit",
-  description:
-    "Contactez TransLog Pro pour un devis de déménagement gratuit sous 24h. Paris et international. Appelez le 01 42 60 11 22 ou remplissez notre formulaire.",
+  description: `Contactez ${clientConfig.NOM_ENTREPRISE} pour un devis de déménagement gratuit sous 24h. ${clientConfig.VILLE} et international. Appelez le ${clientConfig.TELEPHONE} ou remplissez notre formulaire.`,
 };
 
 export default function ContactPage() {

@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git clone https://github.com/agencecelexia-dotcom/paysagiste-template /tmp/paysagiste-template)",
+      "Bash(npm run build)",
+      "Bash(npx next build)",
+      "Bash(git status -u)",
+      "Bash(git add src/config/client.config.ts src/components/admin/AdminSidebar.tsx src/components/admin/ContenuTab.tsx src/components/admin/DashboardTab.tsx src/components/admin/PhotosTab.tsx src/components/admin/ProjetsTab.tsx src/components/admin/ServicesTab.tsx src/components/admin/TemoignagesTab.tsx src/app/api/admin/projects/route.ts src/app/api/admin/save-client/route.ts src/app/api/admin/services/route.ts src/app/api/admin/testimonials/route.ts src/app/admin/dashboard/page.tsx src/app/admin/dashboard/DashboardClient.tsx src/app/admin/login/page.tsx src/app/admin/layout.tsx src/app/api/admin/login/route.ts src/app/api/admin/logout/route.ts src/middleware.ts src/app/layout.tsx src/app/page.tsx src/app/a-propos/page.tsx src/app/realisations/[slug]/page.tsx src/components/layout/Footer.tsx src/components/layout/Logo.tsx src/components/sections/CTASection.tsx src/components/sections/HeroSection.tsx src/components/sections/WhyChooseUs.tsx src/data/blog-posts.ts src/data/company.ts src/data/realisations.ts src/data/services.ts src/data/team.ts src/data/testimonials.ts src/lib/storage.ts storage/submissions.json)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git add src/config/client.config.ts src/data/realisations.ts src/data/services.ts src/data/company.ts src/data/team.ts src/data/testimonials.ts src/data/blog-posts.ts storage/submissions.json)",
+      "Bash(git add IMAGES.md src/app/api/contact/route.ts src/config/client.config.ts storage/submissions.json)",
+      "Bash(npm install)",
+      "Bash(git add -A)"
+    ]
+  }
+}
