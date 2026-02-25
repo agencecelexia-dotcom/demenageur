@@ -21,7 +21,7 @@ export default function AProposPage() {
             <FadeUp>
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent-400 mb-4">Notre histoire</p>
               <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6">
-                25 ans au service du transport routier normand
+                {clientConfig.ANNEES_EXPERIENCE} ans au service du transport en {clientConfig.REGION}
               </h1>
               <p className="text-neutral-300 leading-relaxed mb-8">
                 {company.description}
@@ -110,7 +110,7 @@ export default function AProposPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { value: "1999", label: "Année de fondation" },
+              { value: clientConfig.ANNEE_CREATION, label: "Année de fondation" },
               { value: "20+", label: "Collaborateurs" },
               { value: "15+", label: "Pays desservis" },
               { value: "98%", label: "Clients satisfaits" },

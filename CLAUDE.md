@@ -34,6 +34,17 @@ Accent (Amber) : oklch(72% 0.18 65)
 Toutes les informations de l'entreprise (nom, telephone, email, adresse, etc.) sont centralisees dans `/src/config/client.config.ts`.
 Modifier ce fichier unique pour personnaliser le site — ne pas hardcoder ces valeurs dans les composants.
 
+## Personnalisation obligatoire lors du déploiement client
+
+Lors de la personnalisation du template pour un nouveau client, il est **OBLIGATOIRE** de personnaliser :
+1. `/src/config/client.config.ts` — toutes les valeurs placeholder doivent être remplacées
+2. **Le panel admin** (`/src/components/admin/`) — les fausses données de démo (demandes, stats, contenu) doivent être adaptées au métier et à la ville du client
+3. `/src/data/` — les données (services, réalisations, équipe, témoignages, blog) doivent être réécrites pour le client
+4. `/public/images/` — toutes les images placeholder doivent être remplacées par des photos du client
+5. Le `GENRE_DIRIGEANT` dans client.config.ts ("M" ou "F") contrôle les accords genrés dans les textes (Gérant/Gérante, il/elle, etc.)
+
+Ne jamais laisser des données de démo ou des placeholders en production.
+
 ## Déploiement
 
 Le site est déployé sur Vercel (`cdg1` — région Paris).

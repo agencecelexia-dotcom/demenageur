@@ -14,6 +14,7 @@ import {
   Clock,
   Percent,
 } from "lucide-react";
+import { clientConfig } from "@/config/client.config";
 
 type SubmissionStatus = "Nouveau" | "Contacté" | "En cours" | "Converti";
 
@@ -31,16 +32,18 @@ interface Submission {
   status: SubmissionStatus;
 }
 
+const c = clientConfig;
+
 const INITIAL_SUBMISSIONS: Submission[] = [
   {
     id: "1",
     name: "Marie Lefebvre",
     email: "marie.lefebvre@email.fr",
     phone: "06 12 34 56 78",
-    service: "Déménagement résidentiel",
-    subject: "Déménagement appartement 3 pièces",
-    message: "Bonjour, je souhaite déménager mon appartement de 65m² avec cave. Pouvez-vous me contacter pour un devis ?",
-    location: "{VILLE} Centre",
+    service: "Transport de fret",
+    subject: "Transport 2 palettes",
+    message: "Bonjour, je souhaite faire transporter 2 palettes de matériel. Pouvez-vous me contacter pour un devis ?",
+    location: `${c.VILLE} Centre`,
     date: "21/02/2026",
     time: "10:23",
     status: "Nouveau",
@@ -50,10 +53,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Pierre & Nathalie Bonnet",
     email: "bonnet.pierre@gmail.com",
     phone: "06 98 76 54 32",
-    service: "Déménagement longue distance",
-    subject: "Déménagement maison {VILLE} → Marseille",
-    message: "Nous déménageons notre maison de 120m² vers Marseille. 4 chambres, garage, jardin. Budget prévu : 4 000€.",
-    location: "{COMMUNE_1}",
+    service: "Affrètement",
+    subject: `Affrètement semi-remorque ${c.VILLE} → Marseille`,
+    message: `Nous avons besoin d'un semi-remorque complet de ${c.VILLE} vers Marseille. 24 tonnes de matériaux de construction.`,
+    location: c.COMMUNE_1,
     date: "20/02/2026",
     time: "14:45",
     status: "Contacté",
@@ -63,10 +66,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Michel Faure",
     email: "m.faure@orange.fr",
     phone: "07 23 45 67 89",
-    service: "Garde-meubles",
-    subject: "Stockage 15m³ pendant 3 mois",
-    message: "Je recherche un garde-meubles sécurisé pour environ 15m³ de mobilier pendant 3 mois, le temps de mes travaux.",
-    location: "{COMMUNE_2}",
+    service: "Logistique & Stockage",
+    subject: "Entreposage 50m² pendant 3 mois",
+    message: "Je recherche un espace d'entreposage sécurisé d'environ 50m² pendant 3 mois pour du matériel industriel.",
+    location: c.COMMUNE_2,
     date: "19/02/2026",
     time: "09:15",
     status: "En cours",
@@ -76,10 +79,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Isabelle Petit",
     email: "isabelle.petit@sfr.fr",
     phone: "06 34 56 78 90",
-    service: "Déménagement entreprise",
-    subject: "Transfert bureaux 200m² — 15 postes",
-    message: "Nous devons transférer nos bureaux de 200m² avec 15 postes de travail, serveurs informatiques et archives.",
-    location: "{COMMUNE_3}",
+    service: "Manutention",
+    subject: "Déchargement machines industrielles",
+    message: "Nous avons besoin d'une équipe de manutention pour décharger 3 machines industrielles (2 tonnes chacune) sur notre site.",
+    location: c.COMMUNE_3,
     date: "18/02/2026",
     time: "16:30",
     status: "Converti",
@@ -89,10 +92,10 @@ const INITIAL_SUBMISSIONS: Submission[] = [
     name: "Jean-Marc Reynaud",
     email: "jm.reynaud@free.fr",
     phone: "06 45 67 89 01",
-    service: "Déménagement international",
-    subject: "Déménagement complet vers Bruxelles",
-    message: "Déménagement familial complet vers la Belgique : maison 150m², 5 pièces, piano, objets fragiles. Merci de me rappeler.",
-    location: "{VILLE}",
+    service: "Transport européen",
+    subject: "Expédition lot complet vers Bruxelles",
+    message: "Expédition de 15 palettes de produits industriels vers la Belgique. Besoin de gestion des formalités douanières. Merci de me rappeler.",
+    location: c.VILLE,
     date: "17/02/2026",
     time: "11:00",
     status: "Nouveau",

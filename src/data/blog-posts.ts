@@ -14,7 +14,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "7 min",
     date: "2025-01-20",
     featuredImage: "/images/blog/checklist-demenagement.png",
-    author: "Isabelle Renard",
+    author: "Responsable Exploitation",
     tags: ["fret", "expédition", "conditionnement", "conseils", "transport"],
     content: [
       {
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
         type: "quote",
         content:
           "Un colis bien préparé est un colis qui arrive intact. On peut rattraper un retard, on ne répare pas une marchandise abîmée.",
-        author: "Isabelle Renard, Responsable Exploitation",
+        author: "Responsable Exploitation",
       },
     ],
   },
@@ -183,7 +183,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "9 min",
     date: "2025-01-08",
     featuredImage: "/images/blog/demenagement-international.png",
-    author: "Maxime Duval",
+    author: "Responsable Commercial",
     tags: ["affrètement", "commissionnement", "transport", "responsabilité", "contrat"],
     content: [
       {
@@ -285,7 +285,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "6 min",
     date: "2024-11-28",
     featuredImage: "/images/blog/demenagement-entreprise.jpeg",
-    author: "Maxime Duval",
+    author: "Responsable Commercial",
     tags: ["choisir-transporteur", "critères", "assurance", "fiabilité", "conseils"],
     content: [
       {
@@ -322,7 +322,7 @@ export const blogPosts: BlogPost[] = [
         type: "quote",
         content:
           "Le prix le moins cher n'est jamais le vrai critère. Ce qui compte, c'est le coût total d'une avarie ou d'un retard.",
-        author: "Maxime Duval, Responsable Commercial",
+        author: "Responsable Commercial",
       },
     ],
   },

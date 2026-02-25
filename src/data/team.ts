@@ -3,12 +3,17 @@ import { clientConfig } from "@/config/client.config";
 
 const c = clientConfig;
 
+// Genre-aware helper: "il"/"elle", "dirigeant"/"dirigeante", etc.
+const genre = c.GENRE_DIRIGEANT as string;
+const il = genre === "F" ? "Elle" : "Il";
+const dirigeLabel = genre === "F" ? "Gérante" : "Gérant";
+
 export const team: TeamMember[] = [
   {
     id: "tm1",
     name: `${c.PRENOM_DIRIGEANT} ${c.NOM_DIRIGEANT}`,
-    role: "Gérant",
-    bio: `${c.PRENOM_DIRIGEANT} dirige ${c.NOM_ENTREPRISE} avec passion depuis la reprise de la société. Fort d'une solide expérience dans le transport routier en ${c.REGION}, il pilote la stratégie de l'entreprise, développe les partenariats et veille à la satisfaction de chaque client. Sa connaissance du tissu économique de ${c.VILLE} est un atout précieux.`,
+    role: dirigeLabel,
+    bio: `${c.PRENOM_DIRIGEANT} dirige ${c.NOM_ENTREPRISE} avec passion depuis la reprise de la société. ${il} possède une solide expérience dans le transport routier en ${c.REGION}, pilote la stratégie de l'entreprise, développe les partenariats et veille à la satisfaction de chaque client.`,
     image: "/images/team/laurent-mercier.png",
     specialties: [
       "Direction d'exploitation",
@@ -30,9 +35,9 @@ export const team: TeamMember[] = [
   },
   {
     id: "tm3",
-    name: "Isabelle Renard",
+    name: "Responsable Exploitation",
     role: "Responsable Exploitation",
-    bio: `Isabelle coordonne quotidiennement les tournées, les chauffeurs et les relations avec les clients. Sa rigueur et son sens de l'organisation permettent de tenir les engagements de livraison même en situation d'urgence. Elle est la tour de contrôle opérationnelle de ${c.NOM_ENTREPRISE}.`,
+    bio: `Coordination quotidienne des tournées, des chauffeurs et des relations avec les clients. Rigueur et sens de l'organisation permettent de tenir les engagements de livraison même en situation d'urgence. La tour de contrôle opérationnelle de ${c.NOM_ENTREPRISE}.`,
     image: "/images/team/sophie-blanchard.png",
     specialties: [
       "Gestion des tournées",
@@ -42,9 +47,9 @@ export const team: TeamMember[] = [
   },
   {
     id: "tm4",
-    name: "Maxime Duval",
+    name: "Responsable Commercial",
     role: "Responsable Commercial",
-    bio: `Maxime prospecte et fidélise les clients professionnels de ${c.NOM_ENTREPRISE}. Spécialiste des solutions sur mesure pour les industriels et les négoces régionaux, il est l'interlocuteur de référence pour toute demande de devis ou de partenariat logistique durable.`,
+    bio: `Prospection et fidélisation des clients professionnels de ${c.NOM_ENTREPRISE}. Spécialiste des solutions sur mesure pour les industriels et les négoces régionaux, interlocuteur de référence pour toute demande de devis ou de partenariat logistique durable.`,
     image: "/images/team/emilie-fontaine.png",
     specialties: [
       "Développement client",
