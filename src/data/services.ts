@@ -1,4 +1,7 @@
 import type { Service } from "@/types";
+import { clientConfig } from "@/config/client.config";
+
+const c = clientConfig;
 
 export const services: Service[] = [
   {
@@ -6,9 +9,9 @@ export const services: Service[] = [
     slug: "transport-routier-fret",
     title: "Transport Routier de Fret",
     shortDescription:
-      "Transport interurbain de marchandises en {REGION} et toute la France, avec une flotte moderne et GPS tracée.",
+      `Transport interurbain de marchandises en ${c.REGION} et toute la France, avec une flotte moderne et GPS tracée.`,
     fullDescription:
-      "Notre activité principale : le transport routier de fret interurbain. Camions bâchés, fourgons et semi-remorques sillonnent quotidiennement les axes entre {VILLE} et les principales villes françaises. Chaque expédition est tracée en temps réel. Nous prenons en charge tous types de marchandises : produits industriels, matériaux de construction, biens de consommation, fret palettisé.",
+      `Notre activité principale : le transport routier de fret interurbain. Camions bâchés, fourgons et semi-remorques sillonnent quotidiennement les axes entre ${c.VILLE} et les principales villes françaises. Chaque expédition est tracée en temps réel. Nous prenons en charge tous types de marchandises : produits industriels, matériaux de construction, biens de consommation, fret palettisé.`,
     icon: "Truck",
     image: "/images/services/demenagement-residentiel.png",
     features: [
@@ -29,18 +32,18 @@ export const services: Service[] = [
     slug: "logistique-entreposage",
     title: "Logistique & Entreposage",
     shortDescription:
-      "Plateforme logistique à {VILLE} : stockage sécurisé, gestion des flux entrants et sortants, préparation de commandes.",
+      `Plateforme logistique à ${c.VILLE} : stockage sécurisé, gestion des flux entrants et sortants, préparation de commandes.`,
     fullDescription:
-      "Notre entrepôt, idéalement situé à {VILLE}, offre une solution logistique complète pour les entreprises. Réception, stockage, préparation de commandes et expédition : nous gérons l'intégralité de vos flux logistiques avec rigueur et traçabilité. Adapté aux entreprises de toute taille.",
+      `Notre entrepôt, idéalement situé à ${c.VILLE}, offre une solution logistique complète pour les entreprises. Réception, stockage, préparation de commandes et expédition : nous gérons l'intégralité de vos flux logistiques avec rigueur et traçabilité. Adapté aux entreprises de toute taille.`,
     icon: "Warehouse",
     image: "/images/services/demenagement-entreprise.png",
     features: [
-      "Entrepôt sécurisé à {VILLE}",
+      `Entrepôt sécurisé à ${c.VILLE}`,
       "Gestion des entrées et sorties de stock",
       "Préparation de commandes",
       "Étiquetage et conditionnement",
       "Reporting et traçabilité en temps réel",
-      "Accès direct aux infrastructures de {VILLE}",
+      `Accès direct aux infrastructures de ${c.VILLE}`,
     ],
     price: "Devis sur mesure",
     duration: "Sans engagement de durée",
@@ -75,16 +78,16 @@ export const services: Service[] = [
     slug: "transport-europeen",
     title: "Transport Européen",
     shortDescription:
-      "Envois vers l'Europe depuis {VILLE} : Benelux, Allemagne, Espagne, Portugal et au-delà avec nos partenaires certifiés.",
+      `Envois vers l'Europe depuis ${c.VILLE} : Benelux, Allemagne, Espagne, Portugal et au-delà avec nos partenaires certifiés.`,
     fullDescription:
-      "Depuis notre base à {VILLE}, porte d'entrée naturelle vers l'Europe, nous organisons vos transports internationaux vers les principaux pays européens. En groupage ou en lot complet, vos marchandises sont acheminées dans le respect des délais et de la réglementation douanière. Nos partenaires européens certifiés garantissent la continuité de la chaîne logistique.",
+      `Depuis notre base à ${c.VILLE}, porte d'entrée naturelle vers l'Europe, nous organisons vos transports internationaux vers les principaux pays européens. En groupage ou en lot complet, vos marchandises sont acheminées dans le respect des délais et de la réglementation douanière. Nos partenaires européens certifiés garantissent la continuité de la chaîne logistique.`,
     icon: "Globe",
     image: "/images/services/demenagement-international.jpeg",
     features: [
       "Transport en lot complet ou groupage",
       "Gestion des formalités douanières",
       "Partenaires certifiés dans toute l'Europe",
-      "Départ depuis {VILLE}",
+      `Départ depuis ${c.VILLE}`,
       "Documents de transport conformes",
       "Assurance internationale incluse",
     ],
@@ -100,7 +103,7 @@ export const services: Service[] = [
     shortDescription:
       "Nous organisons et coordonnons vos chaînes de transport multi-modes en tant que commissionnaire responsable.",
     fullDescription:
-      "En tant que commissionnaire de transport, {NOM_ENTREPRISE} se charge d'organiser l'acheminement de vos marchandises de bout en bout, en sélectionnant les modes de transport les plus adaptés. Nous assumons la responsabilité de toute la chaîne logistique, de l'enlèvement à la livraison finale, pour vous offrir une tranquillité totale.",
+      `En tant que commissionnaire de transport, ${c.NOM_ENTREPRISE} se charge d'organiser l'acheminement de vos marchandises de bout en bout, en sélectionnant les modes de transport les plus adaptés. Nous assumons la responsabilité de toute la chaîne logistique, de l'enlèvement à la livraison finale, pour vous offrir une tranquillité totale.`,
     icon: "ClipboardList",
     image: "/images/services/garde-meuble-stockage.png",
     features: [
@@ -121,9 +124,9 @@ export const services: Service[] = [
     slug: "manutention",
     title: "Manutention",
     shortDescription:
-      "Chargement, déchargement, gerbage et mise en place de marchandises — nos équipes interviennent sur site à {VILLE} et en {REGION}.",
+      `Chargement, déchargement, gerbage et mise en place de marchandises — nos équipes interviennent sur site à ${c.VILLE} et en ${c.REGION}.`,
     fullDescription:
-      "Nos équipes de manutentionnaires qualifiés interviennent pour le chargement et déchargement de vos véhicules, la mise en palette, le gerbage et la mise en place de marchandises lourdes ou volumineuses. Disponibles à {VILLE} et dans toute la {REGION}, ils s'adaptent à vos contraintes horaires et à vos exigences de sécurité.",
+      `Nos équipes de manutentionnaires qualifiés interviennent pour le chargement et déchargement de vos véhicules, la mise en palette, le gerbage et la mise en place de marchandises lourdes ou volumineuses. Disponibles à ${c.VILLE} et dans toute la ${c.REGION}, ils s'adaptent à vos contraintes horaires et à vos exigences de sécurité.`,
     icon: "PackageCheck",
     image: "/images/services/emballage-manutention.png",
     features: [
@@ -132,7 +135,7 @@ export const services: Service[] = [
       "Gerbage et dégerbage",
       "Manutention de charges lourdes",
       "Interventions sur site et en entrepôt",
-      "Équipes disponibles en {REGION}",
+      `Équipes disponibles en ${c.REGION}`,
     ],
     price: "À partir de 45€/h",
     duration: "À la demi-journée ou journée",

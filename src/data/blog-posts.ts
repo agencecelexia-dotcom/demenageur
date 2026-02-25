@@ -1,4 +1,7 @@
 import type { BlogPost } from "@/types";
+import { clientConfig } from "@/config/client.config";
+
+const c = clientConfig;
 
 export const blogPosts: BlogPost[] = [
   {
@@ -67,14 +70,14 @@ export const blogPosts: BlogPost[] = [
   {
     id: "b2",
     slug: "transport-exceptionnel-reglementation",
-    title: "Transport exceptionnel : autorisations et réglementation en {REGION}",
+    title: `Transport exceptionnel : autorisations et réglementation en ${c.REGION}`,
     excerpt:
-      "Convoi exceptionnel, transport hors gabarit : quelles démarches, quels délais et quels itinéraires sont à prévoir pour vos charges lourdes en {DEPARTEMENT} ?",
+      `Convoi exceptionnel, transport hors gabarit : quelles démarches, quels délais et quels itinéraires sont à prévoir pour vos charges lourdes en ${c.DEPARTEMENT} ?`,
     category: "Réglementation",
     readTime: "8 min",
     date: "2025-02-03",
     featuredImage: "/images/blog/emballage-fragiles.png",
-    author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}",
+    author: `${c.PRENOM_DIRIGEANT} ${c.NOM_DIRIGEANT}`,
     tags: ["transport-exceptionnel", "convoi", "réglementation", "hors-gabarit"],
     content: [
       {
@@ -103,11 +106,11 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "L'autorisation de transport exceptionnel est délivrée par les préfectures de chaque département traversé. Elle doit être demandée au minimum 5 jours ouvrés avant le départ (jusqu'à 30 jours pour les catégories 3 et 4). En {REGION}, la DREAL coordonne l'instruction des dossiers pour les itinéraires les plus complexes.",
+          `L'autorisation de transport exceptionnel est délivrée par les préfectures de chaque département traversé. Elle doit être demandée au minimum 5 jours ouvrés avant le départ (jusqu'à 30 jours pour les catégories 3 et 4). En ${c.REGION}, la DREAL coordonne l'instruction des dossiers pour les itinéraires les plus complexes.`,
       },
       {
         type: "h2",
-        content: "Itinéraires préférentiels en {DEPARTEMENT}",
+        content: `Itinéraires préférentiels en ${c.DEPARTEMENT}`,
       },
       {
         type: "list",
@@ -116,7 +119,7 @@ export const blogPosts: BlogPost[] = [
           "Axes secondaires : itinéraires fréquemment utilisés, restrictions possibles la nuit",
           "Routes nationales : vérifier les passages sous pont et gabarits limités",
           "Alternatives recommandées pour les gabarits très larges",
-          "Zone portuaire de {VILLE} : protocole spécifique, coordonnez-vous avec le terminal",
+          `Zone portuaire de ${c.VILLE} : protocole spécifique, coordonnez-vous avec le terminal`,
         ],
       },
     ],
@@ -124,20 +127,20 @@ export const blogPosts: BlogPost[] = [
   {
     id: "b3",
     slug: "axes-routiers-fret-regional",
-    title: "Axes routiers principaux : le réseau incontournable du fret en {REGION}",
+    title: `Axes routiers principaux : le réseau incontournable du fret en ${c.REGION}`,
     excerpt:
       "Trafic, travaux, restrictions de circulation : tout ce que les chargeurs et transporteurs doivent savoir sur les axes régionaux pour optimiser leurs flux.",
     category: "Infrastructure",
     readTime: "6 min",
     date: "2025-02-17",
     featuredImage: "/images/blog/demenagement-paris.png",
-    author: "{FONDATEUR_NOM}",
+    author: c.FONDATEUR_NOM,
     tags: ["transport", "logistique", "infrastructure"],
     content: [
       {
         type: "paragraph",
         content:
-          "Les axes autoroutiers principaux sont la colonne vertébrale du transport routier dans notre région. Ils concentrent des enjeux considérables pour les transporteurs de {REGION}.",
+          `Les axes autoroutiers principaux sont la colonne vertébrale du transport routier dans notre région. Ils concentrent des enjeux considérables pour les transporteurs de ${c.REGION}.`,
       },
       {
         type: "h2",
@@ -160,13 +163,13 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "Chez {NOM_ENTREPRISE}, nos chauffeurs connaissent les axes régionaux par cœur après {ANNEES_EXPERIENCE} ans de service. Nous privilégions les départs matinaux entre 4h et 6h pour les livraisons en agglomération, et entre 10h et 14h pour éviter les pointes de trafic en milieu de journée.",
+          `Chez ${c.NOM_ENTREPRISE}, nos chauffeurs connaissent les axes régionaux par cœur après ${c.ANNEES_EXPERIENCE} ans de service. Nous privilégions les départs matinaux entre 4h et 6h pour les livraisons en agglomération, et entre 10h et 14h pour éviter les pointes de trafic en milieu de journée.`,
       },
       {
         type: "quote",
         content:
           "Sur les grands axes, une heure de marge au départ, c'est souvent deux heures de retard évitées à l'arrivée.",
-        author: "{FONDATEUR_NOM}, Fondateur",
+        author: `${c.FONDATEUR_NOM}, Fondateur`,
       },
     ],
   },
@@ -219,27 +222,27 @@ export const blogPosts: BlogPost[] = [
       {
         type: "paragraph",
         content:
-          "Pour un transport ponctuel avec un véhicule spécifique : optez pour l'affrètement. Pour une chaîne logistique complexe, multi-étapes ou multi-modes : préférez le commissionnement. Chez {NOM_ENTREPRISE}, nous proposons les deux formules et vous conseillons sur la plus adaptée à votre besoin.",
+          `Pour un transport ponctuel avec un véhicule spécifique : optez pour l'affrètement. Pour une chaîne logistique complexe, multi-étapes ou multi-modes : préférez le commissionnement. Chez ${c.NOM_ENTREPRISE}, nous proposons les deux formules et vous conseillons sur la plus adaptée à votre besoin.`,
       },
     ],
   },
   {
     id: "b5",
     slug: "port-hub-logistique",
-    title: "Le port de {VILLE} : hub logistique et opportunité pour les transporteurs",
+    title: `Le port de ${c.VILLE} : hub logistique et opportunité pour les transporteurs`,
     excerpt:
       "Container, roll-on roll-off, vrac solide : comprendre les flux portuaires pour mieux organiser vos transports pré et post-portuaires.",
     category: "Logistique",
     readTime: "7 min",
     date: "2024-12-10",
     featuredImage: "/images/blog/garde-meuble.png",
-    author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}",
+    author: `${c.PRENOM_DIRIGEANT} ${c.NOM_DIRIGEANT}`,
     tags: ["port", "conteneur", "logistique", "import-export", "maritime"],
     content: [
       {
         type: "paragraph",
         content:
-          "Les infrastructures portuaires de {VILLE} représentent une opportunité et un défi logistique quotidien pour les transporteurs de {REGION} comme {NOM_ENTREPRISE}.",
+          `Les infrastructures portuaires de ${c.VILLE} représentent une opportunité et un défi logistique quotidien pour les transporteurs de ${c.REGION} comme ${c.NOM_ENTREPRISE}.`,
       },
       {
         type: "h2",
@@ -267,8 +270,8 @@ export const blogPosts: BlogPost[] = [
       {
         type: "quote",
         content:
-          "Être à {VILLE}, c'est être au cœur des flux. Notre position géographique est notre premier avantage compétitif.",
-        author: "{PRENOM_DIRIGEANT} {NOM_DIRIGEANT}, Gérant",
+          `Être à ${c.VILLE}, c'est être au cœur des flux. Notre position géographique est notre premier avantage compétitif.`,
+        author: `${c.PRENOM_DIRIGEANT} ${c.NOM_DIRIGEANT}, Gérant`,
       },
     ],
   },

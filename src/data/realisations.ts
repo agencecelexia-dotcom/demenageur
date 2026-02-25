@@ -1,14 +1,17 @@
 import type { Realisation } from "@/types";
+import { clientConfig } from "@/config/client.config";
+
+const c = clientConfig;
 
 export const realisations: Realisation[] = [
   {
     id: "r1",
     slug: "livraison-urgente-ciments-lafarge",
-    title: "Livraison urgente — 3 semi-remorques de ciment pour Lafarge {REGION}",
+    title: `Livraison urgente — 3 semi-remorques de ciment pour Lafarge ${c.REGION}`,
     category: "local",
-    client: "Lafarge {REGION}",
-    origin: "{VILLE}",
-    destination: "{COMMUNE_1}",
+    client: `Lafarge ${c.REGION}`,
+    origin: c.VILLE,
+    destination: c.COMMUNE_1,
     volume: "90 t",
     distance: "88 km",
     duration: "1 journée",
@@ -18,7 +21,7 @@ export const realisations: Realisation[] = [
     solution:
       "Mobilisation immédiate de trois camions disponibles, coordination avec le chef de chantier pour les horaires de déchargement, optimisation des temps de trajet et respect des fenêtres de livraison.",
     result:
-      "Les trois livraisons effectuées en moins de 9 heures. Le chantier a repris à 6h le lendemain comme prévu. Lafarge a intégré {NOM_ENTREPRISE} à son panel de transporteurs régionaux.",
+      `Les trois livraisons effectuées en moins de 9 heures. Le chantier a repris à 6h le lendemain comme prévu. Lafarge a intégré ${c.NOM_ENTREPRISE} à son panel de transporteurs régionaux.`,
     featuredImage: "/images/realisations/appartement-haussmannien.png",
     images: ["/images/realisations/appartement-haussmannien.png"],
     featured: true,
@@ -28,11 +31,11 @@ export const realisations: Realisation[] = [
   {
     id: "r2",
     slug: "transfert-usine-industrielle",
-    title: "Transfert d'équipements industriels — {COMMUNE_2} → {VILLE}",
+    title: `Transfert d'équipements industriels — ${c.COMMUNE_2} → ${c.VILLE}`,
     category: "entreprise",
-    client: "PME Métallurgie {REGION}",
-    origin: "{COMMUNE_2}",
-    destination: "Zone Industrielle {VILLE}",
+    client: `PME Métallurgie ${c.REGION}`,
+    origin: c.COMMUNE_2,
+    destination: `Zone Industrielle ${c.VILLE}`,
     volume: "35 t",
     distance: "42 km",
     duration: "2 jours",
@@ -52,10 +55,10 @@ export const realisations: Realisation[] = [
   {
     id: "r3",
     slug: "export-conteneur-benelux",
-    title: "Groupage export — {VILLE} → Benelux",
+    title: `Groupage export — ${c.VILLE} → Benelux`,
     category: "international",
     client: "Exportateur de produits agroalimentaires régionaux",
-    origin: "{VILLE} (port)",
+    origin: `${c.VILLE} (port)`,
     destination: "Rotterdam, Pays-Bas",
     volume: "24 t",
     distance: "410 km",
@@ -64,9 +67,9 @@ export const realisations: Realisation[] = [
     challenge:
       "Coordonner l'enlèvement de marchandises agroalimentaires (contrôlées phytosanitaires) depuis deux entrepôts distincts, grouper dans un seul conteneur et assurer le transit douanier dans des délais très serrés.",
     solution:
-      "Ramassage coordonné en deux points le même matin, constitution du dossier douanier en amont par notre service, chargement au terminal de {VILLE}, départ conteneur le soir même.",
+      `Ramassage coordonné en deux points le même matin, constitution du dossier douanier en amont par notre service, chargement au terminal de ${c.VILLE}, départ conteneur le soir même.`,
     result:
-      "Dédouanement à Rotterdam en 4 heures ouvrées. Livraison au destinataire final dans les délais. Le client a depuis confié l'ensemble de ses exports Benelux à {NOM_ENTREPRISE}.",
+      `Dédouanement à Rotterdam en 4 heures ouvrées. Livraison au destinataire final dans les délais. Le client a depuis confié l'ensemble de ses exports Benelux à ${c.NOM_ENTREPRISE}.`,
     featuredImage: "/images/realisations/demenagement-canada.png",
     images: ["/images/realisations/demenagement-canada.png"],
     featured: true,
@@ -76,11 +79,11 @@ export const realisations: Realisation[] = [
   {
     id: "r4",
     slug: "logistique-evenementielle",
-    title: "Logistique événementielle — Salon Maritime {VILLE}",
+    title: `Logistique événementielle — Salon Maritime ${c.VILLE}`,
     category: "entreprise",
     client: "Organisateur événementiel maritime",
-    origin: "Paris et {COMMUNE_1}",
-    destination: "Parc des expositions {VILLE}",
+    origin: `Paris et ${c.COMMUNE_1}`,
+    destination: `Parc des expositions ${c.VILLE}`,
     volume: "60 m³",
     distance: "200 km max",
     duration: "3 jours",
@@ -100,17 +103,17 @@ export const realisations: Realisation[] = [
   {
     id: "r5",
     slug: "tournee-distribution-departement",
-    title: "Tournée de distribution — 45 points de livraison en {DEPARTEMENT}",
+    title: `Tournée de distribution — 45 points de livraison en ${c.DEPARTEMENT}`,
     category: "longue-distance",
     client: "Distributeur de produits alimentaires régionaux",
-    origin: "{VILLE}",
-    destination: "{DEPARTEMENT} (45 points)",
+    origin: c.VILLE,
+    destination: `${c.DEPARTEMENT} (45 points)`,
     volume: "12 t",
     distance: "380 km (tournée complète)",
     duration: "1 journée",
     team: "2 chauffeurs-livreurs",
     challenge:
-      "Optimiser une tournée de 45 points de livraison en {DEPARTEMENT} pour deux chauffeurs, avec des créneaux de livraison imposés par certains clients et un respect strict de la chaîne du froid sur une partie du chargement.",
+      `Optimiser une tournée de 45 points de livraison en ${c.DEPARTEMENT} pour deux chauffeurs, avec des créneaux de livraison imposés par certains clients et un respect strict de la chaîne du froid sur une partie du chargement.`,
     solution:
       "Planification optimisée de la tournée par notre service exploitation, respect des créneaux imposés, chargement chronologique du camion, matériel frigorifique adapté pour les produits sensibles.",
     result:
@@ -124,11 +127,11 @@ export const realisations: Realisation[] = [
   {
     id: "r6",
     slug: "affretement-exceptionnel-longue-distance",
-    title: "Affrètement exceptionnel — Matériel BTP {VILLE} → {COMMUNE_3}",
+    title: `Affrètement exceptionnel — Matériel BTP ${c.VILLE} → ${c.COMMUNE_3}`,
     category: "local",
-    client: "Entreprise de génie civil de {VILLE}",
-    origin: "{VILLE}",
-    destination: "{COMMUNE_3}",
+    client: `Entreprise de génie civil de ${c.VILLE}`,
+    origin: c.VILLE,
+    destination: c.COMMUNE_3,
     volume: "28 t",
     distance: "570 km",
     duration: "2 jours",
