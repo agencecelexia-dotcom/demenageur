@@ -12,18 +12,18 @@ const CLIENT_MD = path.join(ROOT, "CLIENT.md");
 const OUTPUT = path.join(ROOT, "src", "config", "client.config.ts");
 
 function extractNumber(s: string): number {
-  const match = s.match(/[\\d.]+/);
+  const match = s.match(/[\d.]+/);
   return match ? Number(match[0]) : 0;
 }
 
 function phoneToHref(phone: string): string {
-  const digits = phone.replace(/\\s+/g, "");
+  const digits = phone.replace(/\s+/g, "");
   if (digits.startsWith("0")) return "tel:+33" + digits.slice(1);
   return "tel:" + digits;
 }
 
 function esc(s: string): string {
-  return s.replace(/\\\\/g, "\\\\").replace(/"/g, '\\"');
+  return s.replace(/\/g, "\\\\").replace(/"/g, '\\"');
 }
 
 function main() {
@@ -95,6 +95,7 @@ function main() {
   out.push('  SIRET: "' + esc(get("SIRET")) + '",');
   out.push('  ZONE_INTERVENTION: "' + esc(get("ZONE_INTERVENTION")) + '",');
   out.push('  ZONE_KM: "' + esc(get("ZONE_KM") || "30") + '",');
+  out.push('  ADMIN_PASSWORD: "' + esc(get("ADMIN_PASSWORD") || "admin123") + '",');
   out.push("} as const;");
   out.push("");
   out.push("export type ClientConfig = typeof clientConfig;");
