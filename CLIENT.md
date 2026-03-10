@@ -1,6 +1,5 @@
-# CLIENT.md — Template Déménageur | Agence Celexia
+# CLIENT.md — Template Demenageur | Agence Celexia
 # Remplis chaque champ. Laisse "" si inconnu.
-# Ne modifie aucun autre fichier que celui-ci.
 # Puis lance : npm run sync-client
 
 ## IDENTITÉ
@@ -23,16 +22,13 @@ HORAIRES_SEMAINE: "8h - 18h"
 HORAIRES_SAMEDI: "9h - 12h"
 HORAIRES_DIMANCHE: "Fermé"
 
-## BRANDING
-COULEUR_PRIMAIRE: "#1a365d"
-COULEUR_SECONDAIRE: "#ed8936"
-
 ## CHIFFRES
 ANNEES_EXPERIENCE: "15"
 NOMBRE_INTERVENTIONS: "500"
 NOTE_GOOGLE: "4.8"
 NOMBRE_AVIS: "45"
 TAUX_SATISFACTION: "98"
+ANNEE_CREATION: "2010"
 
 ## SEO
 SLOGAN: "{SLOGAN}"
@@ -48,4 +44,4 @@ GOOGLE_URL: ""
 ## LEGAL
 SIRET: "{SIRET}"
 ZONE_INTERVENTION: "{ZONE_INTERVENTION}"
-ZONE_KM: "50"
+ZONE_KM: "30"
